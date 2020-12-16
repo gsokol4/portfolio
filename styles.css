@@ -19,12 +19,13 @@ html{
   
 }
 body{
-background-color: var(--black);
+background-color: purple;
 
 }
 
 a{
-  
+  text-decoration: none;
+  color: inherit;
 }
 button{
   background: none;
@@ -96,7 +97,7 @@ display: inline;
 }
 
 .container{
- margin-top: 10vh;
+ margin-top: 0vh;
 }
 /* button element animation */
 .container .seeWorkButton {
@@ -118,21 +119,27 @@ display: inline;
 
 /* -------------------------------Skills Grid ---------------------------*/
 .skills{
-  width: 90vw;
-  height: 55vh;
-  margin: auto;
+  width: auto;
+  height: 100vh;
+  margin: 0;
   background-color: pink;
 }
 /* grid */
 .skillsGridBox{
+  height: inherit;
+  width: inherit;
+  background-color:gray;
+  max-height: 100%;
+  z-index: 100;
   text-align: center;
   display: grid;
-  grid-template-columns: repeat(6 , .5fr);
-  grid-template-rows:repeat(7 , .5fr);
-  row-gap: 20%;
+  grid-template-columns: repeat(8 , .2fr);
+  grid-template-rows:repeat(7 , .2fr);
+  row-gap: 1%;
   column-gap: .5%;
-  margin: auto;
+  margin: 0;
   align-content: center;
+  overflow: scroll;
 }
 
 .skillInGrid{
@@ -154,7 +161,7 @@ display: inline;
 }
 .circle{
   background-color: var(--pink);
-  height: 100%;
+  height: 10%;
   width: 100%;
   border-radius: 0%;
   
