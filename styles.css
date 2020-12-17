@@ -2,6 +2,7 @@
   margin: 0;
   padding: 0;
   box-sizing: content-box;
+  scrollbar-width: thick;
 }
 :root{
 --black:#2F4454;
@@ -16,11 +17,13 @@ html{
   color: white;
   display: flex;
   justify-content: center;
+  width: 98.7vw;
   
 }
 body{
 background-color: purple;
-
+}
+html::-webkit-scrollbar {
 }
 
 a{
@@ -45,6 +48,7 @@ button:hover p{
   color: var(--lightGreen)
 }
 
+
 nav{
   display: flex;
   background-color: var(--black);
@@ -53,6 +57,7 @@ nav{
   width: auto;
   margin: 0px;
 }
+
 .navElement{
   position: relative;
   margin-bottom: 0;
@@ -133,13 +138,13 @@ display: inline;
   z-index: 100;
   text-align: center;
   display: grid;
-  grid-template-columns: repeat(8 , .2fr);
-  grid-template-rows:repeat(7 , .2fr);
+  grid-template-columns: repeat(6 , .2fr);
+  grid-template-rows:repeat(8 , .2fr);
   row-gap: 1%;
   column-gap: .5%;
   margin: 0;
   align-content: center;
-  overflow: scroll;
+  overflow: visible;
 }
 
 .skillInGrid{
@@ -182,7 +187,7 @@ display: inline;
 }
 .projectContainer{
   position: absolute;
-  top: 45%;
+  top: 25%;
   left: 45%;
 }
 .imagesForPortfolio{
@@ -201,13 +206,14 @@ display: inline;
 }
 /* -------------------------------Contact ---------------------------*/
 .blockContainer{
-  width: 100%;
+  width: auto;
+  height: 100vh;
 }
 
 .contact{
   display: flex;
   flex-direction: column;
-  height: 60vh;
+  height: 100vh;
   width: auto; 
   /* using auto over vw because vw takes into account the vertical scroll bar
    and therefore adds space to the right of the page. this makes things 
