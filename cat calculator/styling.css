@@ -1,0 +1,166 @@
+/*reset margins*/
+*{
+    margin: 0px;
+}
+/* color pallet*/
+:root{
+    --color-1:  #eee3e7;	
+    --color-2:  #ead5dc;	
+    --color-3:	#eec9d2 ;
+    --color-4:	#f4b6c2;	
+    --color-5:	#f6abb6;	
+}
+
+html {
+    box-sizing: border-box;
+  }
+  *, *:before, *:after {
+    box-sizing: inherit;
+    font-weight: normal;
+    font-style: Gotham Rounded, sans-serif;
+    
+  }
+/*body that contains calcultor*/
+/*try to fix the css so that when backround-repeat: no-repeat  nothere is no white space after while screen is streched*/ 
+body{
+    background: url(pics/plusheenBackround.jpg);
+    background-size: stretch;
+    background-position: center;
+    height: 100vh;
+    background-repeat: repeat;
+    text-align: center;
+    font-size: 100%;
+}
+
+/*backdrop for the calculator*/
+.calculatorBody{
+    display: inline-block;
+    width: 70vh;
+    min-width: 50vh;
+    background-color: #f4b6c2;
+    color:  #ead5dc;
+    text-align: center;
+    cursor: url(pics/.cur/catpaw.cur), auto;
+    height: minmax(90vh,auto);
+    
+    
+    
+}
+/*title*/
+header {
+    font-size: 8vh;
+    color: #ead5dc;
+}
+/*displayscreen*/
+.returnScreen {
+    display: flex;
+    align-content: flex-end;
+    border: 2px outset #eec9d2 ;
+    width: 90%;
+    min-height: 9vh;
+    background-color:#eee3e7;
+    background-image: url();
+    color: #f6abb6;
+    margin-left: 5%;
+    margin-right: 5%;
+    margin-bottom: 5%;
+    word-wrap: break-word;
+    word-break: break-all;
+    font-size: 6vh;
+
+   
+}
+/*button grid outlay*/
+.buttons{
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    height: 44vh;
+    width: 90%;
+    background-color: #eee3e7;;
+    border: 1px solid #f6abb6;
+    margin: auto;
+}
+/*numbers grid outlay*/
+.numbers{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    margin-left:auto;
+    margin-right:auto;
+    height: 10vh;
+    width: 98%;
+    gap: 1vh;
+    cursor: url(pics/.cur/catpaw.cur), auto; 
+}
+
+.numbers > button{
+
+    
+    background-image: url(pics/cat.jpg);
+    content: ''; 
+    position: relative; 
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    font-size: 4vh;
+    overflow: hidden;
+    color: var(--color-1);
+    background-color: #f8bac3;
+    border-spacing: 1px;
+    border-color: #eee3e7;
+    border-radius: 10%;
+    outline: none;
+}
+
+.numbers > button:hover{
+
+    background-color:  #eca7b2;
+}
+
+
+/*settings for X/=/+/-/CE (functions) */
+.functions{
+    background-color: var(--color-5);
+    gap: 1%;
+    display: flex;
+    flex-direction: column;
+    
+}
+.functions > button{
+    border: 1px outset #eee3e7;
+    border-radius: 10%;
+    background-image: url() no-repeat;
+    background-size: contain;
+    background-position: center;
+    flex: 1 1 auto;
+    width: 100%;
+    max-height: 100%;
+    color: #eee3e7;
+    cursor: url(pics/.cur/catpaw.cur), auto;
+    outline: none;
+    background-color: #f8bac3;
+    font-size: 2vw;
+}
+
+.functions > button:hover{
+    background-color: #eca7b2;
+}
+.functions > button:active{
+    border: 1px inset #eee3e7;
+    outline: none;
+}
+
+/* cat quote box */
+
+.catQuoteBox{  
+    background: var(--color-4);
+    color: #fffafe;
+    margin-left: 5%;
+    margin-right: 5%;
+    margin-top: 3%;
+    font-size: 3vh;
+}
+
+
+/* resize for tablet and phone */
+
+
