@@ -2,7 +2,6 @@
   margin: 0;
   padding: 0;
   box-sizing: content-box;
-  scrollbar-width: thick;
 }
 :root{
 --black:#2F4454;
@@ -17,7 +16,8 @@ html{
   color: white;
   display: flex;
   justify-content: center;
-  width: 98.7vw;
+  max-width: 100vw;
+  
   
 }
 body{
@@ -54,8 +54,9 @@ nav{
   background-color: var(--black);
   flex-wrap: wrap;
   justify-content: center;
-  width: auto;
+  max-width: 100vw;
   margin: 0px;
+  width: 90vw;
 }
 
 .navElement{
@@ -93,7 +94,7 @@ display: inline;
   align-items: center;
   justify-content: center;
   height: 100vh;
-  width: auto;
+  max-width: 100vw;
   color: white;
   background-color:  var(--black);
   text-align: center;  
@@ -124,8 +125,8 @@ display: inline;
 
 /* -------------------------------Skills Grid ---------------------------*/
 .skills{
-  width: auto;
-  height: 100vh;
+  max-width: 100vw;
+  height: 60vh;
   margin: 0;
   background-color: pink;
 }
@@ -182,7 +183,7 @@ display: inline;
 .myWork{
   position: relative;
   height: 100vh;
-  width: auto;
+  max-width: 100vw;
   background-color: black;
 }
 .projectContainer{
@@ -192,7 +193,7 @@ display: inline;
 }
 .imagesForPortfolio{
   height: 10vw;
-  width: auto;
+  max-width: 100vw;
   object-fit: contain;
 }
 .projectDescription{
@@ -214,11 +215,7 @@ display: inline;
   display: flex;
   flex-direction: column;
   height: 100vh;
-  width: auto; 
-  /* using auto over vw because vw takes into account the vertical scroll bar
-   and therefore adds space to the right of the page. this makes things 
-   hard to center as well as looks sloppy*/ 
-  max-width: 100%;
+  max-width: 100vw;
   justify-content: center;
   align-items: center;
   font-size: 2vw;
