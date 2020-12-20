@@ -5,7 +5,7 @@
 *{
   margin: 0;
   padding: 0;
-  box-sizing: content-box;
+  box-sizing: border-box;
 }
 :root{
 --black:#2F4454;
@@ -26,8 +26,6 @@ html{
 }
 body{
 background-color: purple;
-}
-html::-webkit-scrollbar {
 }
 
 a{
@@ -59,11 +57,33 @@ nav{
   background-color: var(--black);
   flex-wrap: wrap;
   justify-content: center;
-  max-width: 100vw;
+  max-width: 98vw;
   margin: 0px;
-  width: 90vw;
+  width: 100vw;
 }
+.mobileMenu{
+  /*display: none;*/
+  position: relative;
+  background-color: green;
 
+}
+.menuPiece{
+  position: absolute;
+  width: 5vw;
+  height: .5vh;
+  max-width: 30px;
+  background-color: var(--pink);
+  margin-left: 10%;
+}
+.menuPiece.top{
+  top: 40%;
+}
+.menuPiece.mid{
+  top: 50%;
+}
+.menuPiece.bot{
+  top: 60%;
+}
 .navElement{
   position: relative;
   margin-bottom: 0;
@@ -231,11 +251,7 @@ display: inline;
 
 
 
-@media only screen and (max-width: 600px) {
-  .landingPage{
-    
-  }
-}
+
 
 
 @media only screen and (max-width: 350px) {
@@ -244,5 +260,11 @@ display: inline;
   }
   h1{
     margin: 25%;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .landingPage{
+    
   }
 }
