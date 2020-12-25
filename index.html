@@ -9,24 +9,24 @@
   </head>
   <header>
     <nav>
-        <button class="mobileMenu">
+        <button class="mobileMenu" onclick="handleMenu.handleMobleMenuClick()">
           <div class="menuPiece top"></div>
           <div class="menuPiece mid"></div>
           <div class="menuPiece bot"></div>
         </button>
-        <a href="#skillsId" class="container link" >
+        <a href="#skillsId" class="container link nav" >
           <button class="navElement">
             <div class="navButtonDecorations"></div>
             Skills
           </button>
         </a>
-        <a href="#myWorkId"  class="container link">
+        <a href="#myWorkId"  class="container link nav">
           <button class="navElement">
             <div class="navButtonDecorations"></div>
             Projects
           </button>
         </a>
-        <a href="#contactInfoId" class="container link">
+        <a href="#contactInfoId" class="container link nav">
           <button class="navElement">
             <div class="navButtonDecorations"></div>
             Contact Me
@@ -101,7 +101,7 @@
     <div class="myWork" id="myWorkId">
       <a href="cat calculator/calculatorIndex.html" class="projectContainer">
         <h5 class="projectTitle">Kitty Cat Calculator</h5>
-        <img  class="imagesForPortfolio" src="/imagesForPortfolio/KittyCatCalculator.png" 
+        <img  class="imagesForPortfolio" src="imagesForPortfolio/KittyCatCalculator.png" 
         alt="Kitty Cat Caluculator App">
         <p class="projectDescription">
           project using JavaScript, Git for Version control, Html, and CSS
@@ -117,7 +117,7 @@
         440-214-5800
       </p>
     </div>
-
+    <script src="index.js"></script>
   </body>
 
 </html>

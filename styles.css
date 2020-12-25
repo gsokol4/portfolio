@@ -65,6 +65,8 @@ nav{
   /*display: none;*/
   position: relative;
   background-color: green;
+  width: 5vw;
+  text-align: center;
 
 }
 .menuPiece{
