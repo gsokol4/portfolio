@@ -60,7 +60,7 @@ nav{
   background-color: var(--black);
   flex-wrap: wrap;
   justify-content: center;
-  max-width: 98vw;
+  max-width: 99.5vw;
   margin: 0px;
   width: 100vw;
   z-index: 10;
@@ -142,7 +142,7 @@ display: inline;
   width: 20vw;
   max-width: 90vw;
   background-color: none;
-  height: 'auto';
+  height: 20vh;
   margin: 0%;
   outline: var(--pink) solid 2px;
   border-radius: 3%;
@@ -258,22 +258,37 @@ display: inline;
 }
 
 
-
-
-
-
-
 @media only screen and (max-width: 400px) {
   
   .nav{
     background-color: springgreen;
   }
+
+  button.navElement{
+    font-size: .65em;
+  }
+  button.navElement:hover{
+    color: darkgrey;
+  }
+
+  .navElement:hover .navButtonDecorations {
+    display: none;
+    }
+
   .landingPage{
-    font-size: .35em;
+    font-size: .55em;
+    
   }
-  h1{
-    margin: 25%;
+
+  .landingPageHeader{
+    margin: 30px;
   }
+  .container .seeWorkButton{
+    height: 12vh;
+    width: 45vw;
+    font-size: 1.6em;
+  }
+
 }
 
 @media only screen and (max-width: 850px) {
@@ -288,16 +303,16 @@ display: inline;
     max-width: 98vw;
     margin: 0px;
     width: 100vw;
+    height: 10vh;
     z-index: 10;
-    background-color: turquoise;
   }
   .mobileMenu{
     /*display: none;*/
     position: fixed;
     left: 0%;
   
-    background-color: green;
-    width: 10vw;
+    background-color: transparent;
+    width: 8vw;
     height: 10vh;
     text-align: center;
   
@@ -316,14 +331,14 @@ display: inline;
     margin-left: 0;
     margin-right: 0;
     margin-top: 0;
-    background-color: blue;
+    background-color: transparent;
     width: 24vw;
     height: 10vh;
   }
   .navElement .navButtonDecorations{
   position: absolute;
   top: 15%;
-  left: 15%;
+  left: 5%;
   background-color:var(--pink);
   height: 70%;
   width: 2%;
