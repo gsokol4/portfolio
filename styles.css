@@ -258,38 +258,7 @@ display: inline;
 }
 
 
-@media only screen and (max-width: 400px) {
-  
-  .nav{
-    background-color: springgreen;
-  }
 
-  button.navElement{
-    font-size: .65em;
-  }
-  button.navElement:hover{
-    color: darkgrey;
-  }
-
-  .navElement:hover .navButtonDecorations {
-    display: none;
-    }
-
-  .landingPage{
-    font-size: .55em;
-    
-  }
-
-  .landingPageHeader{
-    margin: 30px;
-  }
-  .container .seeWorkButton{
-    height: 12vh;
-    width: 45vw;
-    font-size: 1.6em;
-  }
-
-}
 
 @media only screen and (max-width: 850px) {
   nav{
@@ -335,6 +304,9 @@ display: inline;
     width: 24vw;
     height: 10vh;
   }
+  button.navElement{
+    font-size: .70em;
+  }
   .navElement .navButtonDecorations{
   position: absolute;
   top: 15%;
@@ -347,5 +319,53 @@ display: inline;
  .container.link.nav{
    height: 5vh;
  }
+
+}
+
+@media only screen and (max-width: 300px) {
+  
+   /* -------------------------------nav section phone  ---------------------------*/
+
+  nav{
+    background-color: pink;
+    height: 20vh;
+  }
+
+  button.navElement{
+    display: block;
+    font-size: .25em;
+    width: 75vw;
+  }
+
+  button.navElement:hover{
+    color: darkgrey;
+  }
+
+  .navElement:hover .navButtonDecorations {
+    display: none;
+    }
+ /* -------------------------------landiing page phone  ---------------------------*/
+  .landingPage{
+    font-size: .45em;
+    
+  }
+
+  .landingPageHeader{
+    margin: 30px;
+  }
+  .container .seeWorkButton{
+    height: 12vh;
+    width: 45vw;
+    font-size: 1.6em;
+  }
+
+  /* -------------------------------Skills grid phone  ---------------------------*/
+  .gridLabel{
+    font-size: .3em;
+  }
+  .skillInGrid{
+    font-size: .4em;
+  }
+
 
 }
