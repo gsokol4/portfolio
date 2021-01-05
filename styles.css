@@ -139,10 +139,10 @@ display: inline;
 /* button element animation */
 .container .seeWorkButton {
   display: relative;
-  width: 20vw;
+  width: 15vw;
   max-width: 90vw;
   background-color: none;
-  height: 20vh;
+  height: 10vh;
   margin: 0%;
   outline: var(--pink) solid 2px;
   border-radius: 3%;
@@ -254,7 +254,11 @@ display: inline;
   max-width: 100vw;
   justify-content: center;
   align-items: center;
-  font-size: 2vw;
+  font-size: 2.5vw;
+}
+.googleForm{
+  width: 50vw;
+  height: 50vh;
 }
 
 
@@ -327,13 +331,12 @@ display: inline;
    /* -------------------------------nav section phone  ---------------------------*/
 
   nav{
-    background-color: pink;
     height: 20vh;
   }
 
   button.navElement{
     display: block;
-    font-size: .25em;
+    font-size: .5em;
     width: 75vw;
   }
 
@@ -360,12 +363,22 @@ display: inline;
   }
 
   /* -------------------------------Skills grid phone  ---------------------------*/
+  
+  .skillsGridBox{
+    row-gap: 3px;
+    grid-template-columns: repeat(6 , 20px);
+
+  }
   .gridLabel{
-    font-size: .3em;
+    font-size: .5em;
+    margin: 5px;
+    
   }
   .skillInGrid{
     font-size: .4em;
   }
-
-
+  /* -------------------------------contact phone  ---------------------------*/
+  .googleForm{
+    display: none;
+  }
 }
