@@ -258,7 +258,7 @@ display: inline;
 }
 .googleForm{
   width: 50vw;
-  height: 50vh;
+  height: 80vh;
 }
 
 
@@ -280,7 +280,6 @@ display: inline;
     z-index: 10;
   }
   .mobileMenu{
-    /*display: none;*/
     position: fixed;
     left: 0%;
   
