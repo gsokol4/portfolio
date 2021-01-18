@@ -14,6 +14,9 @@
           <div class="menuPiece mid"></div>
           <div class="menuPiece bot"></div>
         </button>
+        <a class="home" href="#homeId">
+          <img src="./imagesForPortfolio/simpleCatSmall.png" alt="home button">
+        </a>
         <a href="#skillsId" class="container link nav" >
           <button class="navElement">
             <div class="navButtonDecorations"></div>
@@ -35,16 +38,22 @@
     </nav>
   </header>
   <body>
+    <div class="anchor" id="homeId"></div>
     <div class="landingPage"> 
       <h1 class="landingPageHeader" >Hi, I am Gabriel.<br> I am a Profesional Web Developer</h1>
-      <a href="#myWorkId" class="container link">
-        <button class="seeWorkButton">
-          See My Work
-        </button>
-      </a>
+        <a href="#myWorkId" class="container link">
+          <button class="seeWorkButton">
+            See My Work
+          </button>
+        </a>
+      </div>
     </div>
 
-    <div class="skills" id="skillsId">
+    <div class="anchor" id="skillsId"></div>
+    <div class="skills">
+      <h3 class="sectionHeader">
+        Profesional skills
+      </h3>
       <div class="skillsGridBox">
 
         <div></div> <!--padding-->
@@ -98,7 +107,11 @@
       </div>
     </div>
 
-    <div class="myWork" id="myWorkId">
+    <div class="anchor" id="myWorkId"></div>
+    <div class="myWork">
+      <h3 class="sectionHeader">
+        Portfolio
+      </h3>
       <a target="_blank" rel="noopener noreferrer" href="cat calculator/calculatorIndex.html" class="projectContainer calculator">
         <h5 class="projectTitle">Kitty Cat Calculator</h5>
         <img  class="imagesForPortfolio" src="imagesForPortfolio/KittyCatCalculator.png" 
@@ -116,8 +129,9 @@
       </a>
     </div>
 
-    <div class="contact blockContainer"  id="contactInfoId">
-      <h3 class="contactInfo">Contact Info</h3>
+    <div class="anchor" id="contactInfoId"></div>
+    <div class="contact blockContainer">
+      <h3 class="contactInfo sectionHeader">Contact Info</h3>
       <p class="contactInfo">
         Gabriel Sokol <br>
         gsokol4@gmail.com <br>

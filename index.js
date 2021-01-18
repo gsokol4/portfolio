@@ -16,10 +16,19 @@ class HandleMenuClass {
       }
     } else {
       for (let i = 0; i < this.links.length; i++) {
-        this.links[i].style.display = 'initial'
+        this.links[i].style.display = 'block'
         this.nav[0].style.backgroundColor = '#2F4454'
       }
     }
   }
 }
 const handleMenu = new HandleMenuClass()
+
+/* handle menu linking */
+
+// The function actually applying the offset
+function offsetAnchor() {
+  if (location.hash.length !== 0) {
+    window.scrollTo(window.scrollX, window.scrollY - 100)
+  }
+}
