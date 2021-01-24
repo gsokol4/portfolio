@@ -493,6 +493,8 @@ display: inline;
     display: none;
   }
 }
+
+/* ------------------------------- Internet Explorer  ---------------------------*/
 @media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
   /* IE10+ CSS styles go here */
   body{
@@ -511,6 +513,11 @@ display: inline;
     max-width: 30px;
     background-color: #DA7B93;
     margin-left: 10%;
+  }
+
+  .home{
+    position: absolute;
+    top: 35%;
   }
 
   .navElement{
@@ -534,5 +541,14 @@ display: inline;
     }
     .skills{
       display: none;
+    }
+    .projects{
+      display: none;
+    }
+    .container.link.nav{
+      position: absolute;
+      left: 75%;
+      background-color: transparent;
+      color: #DA7B93;
     }
   }
