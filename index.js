@@ -7,7 +7,7 @@ class HandleMenuClass {
     this.nav = document.getElementsByTagName('nav')
   }
 
-  handleMobleMenuClick () {
+  handleMenuClick () {
     this.state.displayNav = !this.state.displayNav
     if (this.state.displayNav === true) {
       for (let i = 0; i < this.links.length; i++) {
@@ -22,13 +22,5 @@ class HandleMenuClass {
     }
   }
 }
-const handleMenu = new HandleMenuClass()
 
-/* handle menu linking */
-
-// The function actually applying the offset
-function offsetAnchor() {
-  if (location.hash.length !== 0) {
-    window.scrollTo(window.scrollX, window.scrollY - 100)
-  }
-}
+var handleMenu = new HandleMenuClass()

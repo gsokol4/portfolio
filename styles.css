@@ -502,7 +502,9 @@ display: inline;
   nav{
     background-color: #2F4454;
   }
-
+  .mobileMenu{
+    display: none;
+  }
   .menuPiece{
     position: absolute;
     width: 5vw;
@@ -511,6 +513,12 @@ display: inline;
     max-width: 30px;
     background-color: #DA7B93;
     margin-left: 10%;
+  }
+
+  .home{
+    position: absolute;
+    top: 35%;
+    left: 2%;
   }
 
   .navElement{
@@ -535,4 +543,52 @@ display: inline;
     .skills{
       display: none;
     }
+    .projects{
+      display: none;
+    }
+    .container.link.nav{
+      position: absolute;
+      left: 75%;
+      background-color: transparent;
+      color: #DA7B93;
+    }
+    .myWorkLink{
+      display: none;
+    }
+    .skillLink{
+      display:none;
+    }
+/* -------------------------------IE landing page  ---------------------------*/
+    .container .seeWorkButton {
+      display: relative;
+      width: 15vw;
+      max-width: 90vw;
+      background-color: none;
+      height: 15vh;
+      margin-top: 30%;
+      outline: #DA7B93 solid 2px;
+      border-radius: 3%;
+      min-height: 100%;
+      min-width: 60px;
+    }
+    .seeWorkButton:hover {
+      color: #376E6F;
+      background-color: #2F4454;
+      opacity: .35;
+      outline: #DA7B93, solid, 2px;
+      min-height: 100%;
+    }
+
+    .myWork{
+      height: 150vh;
+    }
+    :root{
+      --black:#2F4454;
+      --red:#2E151B;
+      --pink:#DA7B93;
+      --lightGreen:#376E6F;
+      --darkGreen:#1C3334;
+      }
+      
+
   }

@@ -10,34 +10,36 @@
   </head>
   <header>
     <nav>
-        <button class="mobileMenu" onclick="handleMenu.handleMobleMenuClick()">
+
+        <button class="mobileMenu" onclick="handleMenu.handleMenuClick()">
           <div class="menuPiece top"></div>
           <div class="menuPiece mid"></div>
           <div class="menuPiece bot"></div>
         </button>
+        
         <a class="home" href="#homeId">
           <picture>
             <source media="(min-width:850px)" srcset="./imagesForPortfolio/html50x50.png">
             <source media="(min-width:0px)" srcset="./imagesForPortfolio/html25x25.png">
-            <img src="./imagesForPortfolio/htmlFavCon.png" alt="home button">
+            <img src="./imagesForPortfolio/html25x25.png" alt="home button">
           </picture>
         </a>
 
-        <a href="#skillsId" class="container link nav" >
+        <a href="#skillsId" class="container link nav skillLink" >
           <button class="navElement">
             <div class="navButtonDecorations"></div>
             Skills
           </button>
         </a>
 
-        <a href="#myWorkId"  class="container link nav">
+        <a href="#myWorkId"  class="container link nav myWorkLink">
             <button class="navElement">
               <div class="navButtonDecorations"></div>
               Projects
             </button>
         </a>
 
-        <a href="#contactInfoId" class="container link nav">
+        <a href="#contactInfoId" class="container link nav contactInfoLink">
           <button class="navElement">
             <div class="navButtonDecorations"></div>
             Contact Me
@@ -48,7 +50,7 @@
   <body>
     <div class="anchor" id="homeId"></div>
     <div class="landingPage"> 
-      <h1 class="landingPageHeader" >Hi, I am Gabriel Sokol.<br> I am a Profesional Web Developer</h1>
+      <h1 class="landingPageHeader" >Hi, I am Gabriel Sokol.<br> I am a Profesional Frontend Developer</h1>
         <a href="#myWorkId" class="container link">
           <button class="seeWorkButton">
             See My Work
