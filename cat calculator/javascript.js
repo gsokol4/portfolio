@@ -47,11 +47,12 @@ class Calculator {
 
     if (text.toString().charAt(text.length - 1) === '-') { return };
 
-    if (text.toString().charAt(text.length - 1) === '*' && operand !== '-') { return };
+    if (text.toString().charAt(text.length - 1) === '×' && operand !== '-') { return };
 
-    if (text.toString().charAt(text.length - 1) === '/' && operand !== '-') { return };
+    if (text.toString().charAt(text.length - 1) === '÷' && operand !== '-') { return };
 
     if (text.charAt(text.length - 1).toString() === '.') { return }
+
     this.letter_Count = 0
     this.solve()
     this.screen.textContent = this.screen.textContent.toString() +
@@ -74,12 +75,12 @@ class Calculator {
         this.minus()
         break
       }
-      case (this.screen.textContent.includes('*')):
+      case (this.screen.textContent.includes('×')):
       {
         this.multiply()
         break
       }
-      case (this.screen.textContent.includes('/')):
+      case (this.screen.textContent.includes('÷')):
       {
         this.division()
         break
@@ -104,13 +105,13 @@ class Calculator {
         break
       }
 
-      case (this.screen.textContent.includes('*')):
+      case (this.screen.textContent.includes('×')):
       {
         this.multiply()
         break
       }
 
-      case (this.screen.textContent.includes('/')):
+      case (this.screen.textContent.includes('÷')):
       {
         this.division()
         break
@@ -142,14 +143,19 @@ class Calculator {
   }
 
   multiply () {
-    const partsOfMul = this.screen.textContent.split('*')
-    if (partsOfMul[1].toString === '') { return };
+    console.log('multiply used')
+    const partsOfMul = this.screen.textContent.split('×')
+    if (partsOfMul[1] === '') { return }
+    if (partsOfMul[1] === '-') { return }
+    console.log(partsOfMul)
+    console.log(partsOfMul[0])
+    console.log(partsOfMul[1])
     this.screen.textContent = (Number.parseFloat(partsOfMul[0]) *
             (Number.parseFloat(partsOfMul[1])))
   }
 
   division () {
-    const partsOfDiv = this.screen.textContent.split('/')
+    const partsOfDiv = this.screen.textContent.split('÷')
     if (partsOfDiv[1].toString() === '') { return };
     if (partsOfDiv[1].toString() === '0') {
       this.divideByZero()
@@ -179,7 +185,7 @@ class Calculator {
   }
 
   MulAndDivCheck () {
-    const arr = ['*', '/', '+']
+    const arr = ['×', '÷', '+']
 
     const result = arr.some((operand) => this.screen.textContent.includes(operand))
     console.log(result)
@@ -229,7 +235,12 @@ const catQuotes = ['"In ancient times cats were worshipped as gods; they have no
   '"A happy arrangement: many people prefer cats to other people, and many cats prefer people to other cats." - Mason Cooley',
   '"It is impossible for a lover of cats to banish these alert, gentle, and discriminating friends,  who give us just enough of their regard and complaisance to make us hunger for more." - Agnes Repplier',
   '"How we behave toward cats here below determines our status in heaven." - Robert A. Heinlein',
-  '"I used to love dogs until I discovered cats." - Nafisa Joseph'
+  '"I used to love dogs until I discovered cats." - Nafisa Joseph',
+  '"Time with cats is never wasted." - Sigmund Frued',
+  '"You cat to be kitten me right now" - Some dad somewhere probably',
+  '"Cats are like music. It’s foolish to try to explain their worth to those who don’t appreciate them." - Unknown',
+  '"People who hate cats will come back as mice in their next life" - Angry Cat Lady',
+  '"With the qualities of cleanliness, affection, patience, dignity and courage that many cats have, how many of us, I ask you, would be capable of becoming cats?" - Fernand Mery',
 ]
 
 /* cat quote generator (=♡ ᆺ ♡=)

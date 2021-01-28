@@ -123,7 +123,6 @@ header {
     gap: 1%;
     display: flex;
     flex-direction: column;
-    
 }
 .functions > button{
     border: 1px outset #eee3e7;
@@ -163,4 +162,45 @@ header {
 
 /* resize for tablet and phone */
 
+@media screen and (max-width : 480px) {
+    .calculatorBody{
+        height: 100vh;
+        width: 100vw;
+        min-height: 300px;
+        min-width: 150px;
+    }
+    header{
+        font-size: max(8vh, 1.5em);
+        min-height: 25px;
+    }
+    .returnScreen{
+
+        font-size: max(6vh, 1em);
+    }
+    .buttons{
+        height: 63vh;
+        min-height: 170px;
+        width: 95vw;
+    }
+    .numbers{
+        height: 15vh;
+        min-height: 40px;
+    }
+    .functions{
+        height: 63vh;
+        min-height: 167px;
+        width: 30vw;
+        
+    }
+
+    .functions>button {
+        font-size: max(1em,1vh);
+    }
+    .numbers.catQuote{
+        font-size: 4vw;
+    }
+    .catQuoteBox{
+        font-size: 4vw;
+    }
+  }
 

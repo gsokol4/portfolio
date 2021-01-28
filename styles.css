@@ -309,6 +309,13 @@ display: inline;
 .contactInfo{
   display: none;
 }
+.socialMedia{
+  display: none;
+}
+
+.letsTalk{
+display: none;
+}
 .googleForm{
   width: 70vw;
   height: 2000px;
@@ -317,7 +324,7 @@ display: inline;
 
 
 
-
+/* ------------------------------- begin tablet styles  ---------------------------*/
 @media only screen and (max-width: 850px) {
   /* -------------------------------nav tablet  ---------------------------*/
   nav{
@@ -488,13 +495,30 @@ display: inline;
     display: inline;
     font-size: 3em;
   }
-  
+  .socialMedia{
+    display: flex;
+    justify-content: space-evenly;
+    width: 100vw;
+  }
+  .socialMediaLink{
+    align-self: center;
+    font-size: 2em;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .letsTalk{
+    font-size: 2.5em;
+    margin: 30px;
+  }
   .googleForm{
     display: none;
   }
 }
 @media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
-  /* IE10+ CSS styles go here */
+  /* ----------------------IE10+ CSS styles go here--------------------------- */
   body{
     background-color: #2E151B;
   }
