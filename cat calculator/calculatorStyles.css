@@ -35,20 +35,21 @@ body{
 /*backdrop for the calculator*/
 .calculatorBody{
     display: inline-block;
-    width: 70vh;
+    width: 80vw;
     min-width: 50vh;
     background-color: #f4b6c2;
     color:  #ead5dc;
     text-align: center;
     cursor: url(pics/.cur/catpaw.cur), auto;
     height: minmax(90vh,auto);
+    min-height: 500px;
     
     
     
 }
 /*title*/
 header {
-    font-size: 8vh;
+    font-size: max(8vh, 2.5em);
     color: #ead5dc;
 }
 /*displayscreen*/
@@ -57,7 +58,7 @@ header {
     align-content: flex-end;
     border: 2px outset #eec9d2 ;
     width: 90%;
-    min-height: 9vh;
+    height: 9vh;
     background-color:#eee3e7;
     background-image: url();
     color: #f6abb6;
@@ -66,7 +67,8 @@ header {
     margin-bottom: 5%;
     word-wrap: break-word;
     word-break: break-all;
-    font-size: 6vh;
+    font-size: max(6vh, 30px);
+    min-height: 40px;
 
    
 }
@@ -75,10 +77,11 @@ header {
     display: grid;
     grid-template-columns: 3fr 1fr;
     height: 44vh;
-    width: 90%;
+    width: 95%;
     background-color: #eee3e7;;
     border: 1px solid #f6abb6;
     margin: auto;
+    min-height: 300px;
 }
 /*numbers grid outlay*/
 .numbers{
@@ -90,6 +93,7 @@ header {
     width: 98%;
     gap: 1vh;
     cursor: url(pics/.cur/catpaw.cur), auto; 
+    min-height: 70px;
 }
 
 .numbers > button{
@@ -101,7 +105,7 @@ header {
     background-size: contain;
     background-position: center;
     background-repeat: no-repeat;
-    font-size: 4vh;
+    font-size: max(4vh, 2em);
     overflow: hidden;
     color: var(--color-1);
     background-color: #f8bac3;
@@ -123,6 +127,7 @@ header {
     gap: 1%;
     display: flex;
     flex-direction: column;
+    min-height: 220px;
 }
 .functions > button{
     border: 1px outset #eee3e7;
@@ -132,12 +137,12 @@ header {
     background-position: center;
     flex: 1 1 auto;
     width: 100%;
-    max-height: 100%;
+    max-height: 20%;
     color: #eee3e7;
     cursor: url(pics/.cur/catpaw.cur), auto;
     outline: none;
     background-color: #f8bac3;
-    font-size: 2vw;
+    font-size: max(2vw, 2em);
 }
 
 .functions > button:hover{
@@ -147,7 +152,9 @@ header {
     border: 1px inset #eee3e7;
     outline: none;
 }
-
+.numbers.catQuote{
+    font-size: max( 3vh, 1em);
+}
 /* cat quote box */
 
 .catQuoteBox{  
@@ -156,9 +163,52 @@ header {
     margin-left: 5%;
     margin-right: 5%;
     margin-top: 3%;
-    font-size: 3vh;
+    font-size: max(3vh, 1em);
 }
 
+
+@media screen and (max-width : 850px) {
+    .calculatorBody{
+        height: 100vh;
+        width: 100vw;
+        min-height: 400px;
+    }
+    header{
+        font-size: max(8vh, 1.5em);
+        min-height: 25px;
+    }
+    .returnScreen{
+
+        font-size: max(6vh, 1em);
+    }
+    .buttons{
+        height: 63vh;
+        min-height: 170px;
+        width: 95vw;
+    }
+    .numbers{
+        height: 15vh;
+        min-height: 40px;
+    }
+    .functions{
+        height: 63vh;
+        min-height: 167px;
+        width: 30vw;
+        
+    }
+
+    .functions>button {
+        font-size: max(1em,1vh);
+    }
+    .numbers.catQuote{
+        font-size: 2vw;
+    }
+    .catQuoteBox{
+        font-size: max(2vw, 1em);
+        width: 100vw;
+        margin: 0%;
+    }
+  }
 
 /* resize for tablet and phone */
 
@@ -201,6 +251,11 @@ header {
     }
     .catQuoteBox{
         font-size: 4vw;
+        width: 100vw;
+        margin: 0;
     }
   }
+
+  
+
 
