@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <link rel="stylesheet" href="calculatorStyles.css">
+    <title>Kitty Cat Calculator</title>
+    
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-DW3NYNGH2V"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-DW3NYNGH2V');
+</script>
+
+</head>
+
+<body>
+<div class='calculatorBody'>
+    <header>Kitty Cat Calculator</header>
+    <div data-screen="screen" class=returnScreen></div>
+    <div class=buttons>
+        <div data-numbers-buttonsDiv class=numbers>
+            <button data-button-numbers='append' class=numbers>1</button>
+            <button data-button-numbers='append' class=numbers>2</button>
+            <button data-button-numbers='append' class=numbers>3</button>
+            <button data-button-numbers='append' class=numbers>4</button>
+            <button data-button-numbers='append' class=numbers>5</button>
+            <button data-button-numbers='append' class=numbers>6</button>
+            <button data-button-numbers='append' class=numbers>7</button>
+            <button data-button-numbers='append' class=numbers>8</button>
+            <button data-button-numbers='append' class=numbers>9</button>
+            
+            <button data-button-numbers='append once'  class=numbers id='.'>.</button>
+            <button data-button-numbers='append' class="numbers" id=centerzero>0</button>
+            <button data-button-numbers='catQuoteBox' data-catQuoteButton class="numbers catQuote">cat quote</button>
+        </div>
+        <div class=functions>
+            <button data-delete="delete">backspace</button>
+            <button data-clear='CE' id=C>CE</button>
+            <button data-func='plus' id=plus>+</button>
+            <button data-func='minus' id=->-</button>
+            <button data-func='multiply' id=*>&#215;</button> <!-- × multiply-->
+            <button data-func='divide' id='/'>&#247;</button> <!-- ÷ multiply-->
+            <button data-equals='equal' id='='>=</button>
+        </div>
+    </div>
+    <style type="text/css">body, a, a:hover {cursor: url(http://profilki.pl/files/cur/844.png) 30 33, default;}
+    </style>
+    <div data-catQuoteBox class=catQuoteBox>
+        here kitty kitty
+        </div>
+</div>
+<script src=javascript.js tyep=text/javascript></script>
+</body>
+
+</html>

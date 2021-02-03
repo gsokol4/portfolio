@@ -606,13 +606,6 @@ display: none;
     .myWork{
       height: 150vh;
     }
-    :root{
-      --black:#2F4454;
-      --red:#2E151B;
-      --pink:#DA7B93;
-      --lightGreen:#376E6F;
-      --darkGreen:#1C3334;
-      }
       
 
   }
