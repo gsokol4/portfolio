@@ -10,9 +10,10 @@
 :root{
 --black:#2F4454;
 --red:#2E151B;
+--deepRed:#C80004;
+--TangareenOrange:#EF8000;
 --pink:#DA7B93;
---lightGreen:#376E6F;
---darkGreen:#1C3334;
+--white: 	#FFFFFF;
 }
 
 /* -------------------------------general styles---------------------------*/
@@ -23,7 +24,7 @@ html{
   max-width: 100vw;
 }
 body{
-background-color: var(--red);
+background-color: black;
 }
 
 a{
@@ -53,7 +54,7 @@ nav{
   display: flex;
   top: 0%;
   left: 0%;
-  background-color: var(--black);
+  background-color: transparent;
   flex-wrap: wrap;
   justify-content: center;
   max-width: 99.5vw;
@@ -78,7 +79,7 @@ nav{
   height: .5vh;
   min-height: 2px;
   max-width: 30px;
-  background-color: var(--pink);
+  background-color: var(--white);
   margin-left: 10%;
 }
 .menuPiece.top{
@@ -107,13 +108,13 @@ nav{
   margin-right: 0;
   margin-top: 0;
   background-color: transparent;
-  color: var(--pink);
+  color: var(--white);
 }
 .navElement .navButtonDecorations{
 position: absolute;
 top: 25%;
 left: 15%;
-background-color:var(--pink);
+background-color:var(--white);
 opacity: .4;
 height: 50%;
 width: 4%;
@@ -138,7 +139,32 @@ display: inline;
 }
 
 /* -------------------------------landing page ---------------------------*/
+video {
+  object-fit: cover;
+  width: 100vw;
+  height: 100vh;
+  position: absolute;
+  top: 0;
+  left: 0;
+ z-index: -20;
+}
+#homeId{
+  position: relative;
+  top: -50%;
+}
+.viewport-header {
+  position: relative;
+  height: 100vh;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
 
+.landingPageHeader{
+  position: relative;
+  top: -10%;
+}
 .landingPage{
   display: flex;
   flex-direction: column;
@@ -163,17 +189,17 @@ display: inline;
   max-width: 90vw;
   background-color: none;
   height: 5vh;
-  margin-top: 30%;
-  outline: var(--pink) solid 2px;
+  margin-top: 0%;
+  outline: var(--deepRed) solid 2px;
   border-radius: 3%;
   min-height: 100%;
   min-width: 60px;
 }
 .seeWorkButton:hover {
-  color: var(--lightGreen);
-  background-color: var(--black);
-  opacity: .35;
-  outline: var(--pink), solid, 2px;
+  color: var(--white);
+  background-color: var(--TangareenOrange);
+  opacity: .8;
+  outline: var(--deepRed), solid, 2px;
   min-height: 100%;
 }
 
