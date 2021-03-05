@@ -8,11 +8,8 @@
   box-sizing: border-box;
 }
 :root{
---black:#2F4454;
---red:#2E151B;
---deepRed:#C80004;
---TangareenOrange:#EF8000;
---pink:#DA7B93;
+--darkBrown: #492c26;
+--darkBlue: #10173f;
 --white: 	#fff;
 }
 
@@ -275,7 +272,7 @@ video {
   min-height: 400px;
   max-height: 450px;
   margin: 0;
-  background-color: var(--red);
+  background-image: linear-gradient( var(--darkBrown), var(--darkBlue));
   overflow: visible;
   text-align: center;
 
