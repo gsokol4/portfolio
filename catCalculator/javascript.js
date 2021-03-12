@@ -240,7 +240,7 @@ const catQuotes = ['"In ancient times cats were worshipped as gods; they have no
   '"You cat to be kitten me right now" - Some dad somewhere probably',
   '"Cats are like music. It’s foolish to try to explain their worth to those who don’t appreciate them." - Unknown',
   '"People who hate cats will come back as mice in their next life" - Angry Cat Lady',
-  '"With the qualities of cleanliness, affection, patience, dignity and courage that many cats have, how many of us, I ask you, would be capable of becoming cats?" - Fernand Mery',
+  '"With the qualities of cleanliness, affection, patience, dignity and courage that many cats have, how many of us, I ask you, would be capable of becoming cats?" - Fernand Mery'
 ]
 
 /* cat quote generator (=♡ ᆺ ♡=)
