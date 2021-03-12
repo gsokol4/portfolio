@@ -11,6 +11,9 @@
 --darkBrown: #492c26;
 --darkBlue: #10173f;
 --white: 	#fff;
+--lightBlue: #79aff2;
+--black: #170f11;
+--greyBlue: #8798c8;
 }
 
 /* -------------------------------general styles---------------------------*/
@@ -22,7 +25,7 @@ html{
   font-family: sans-serif;
 }
 body{
-background-color: black;
+background-color: whitesmoke;
 }
 
 a{
@@ -249,7 +252,7 @@ video {
   width: 15vw;
   max-width: 90vw;
   background-color: none;
-  height: 5vh;
+  height: 10vh;
   margin-top: 0%;
   outline: var(--deepRed) solid 2px;
   border-radius: 3%;
@@ -262,6 +265,67 @@ video {
   opacity: .8;
   outline: var(--deepRed), solid, 2px;
   min-height: 100%;
+}
+/* ------------------------------- tech icon photos ---------------------------*/
+.tech{
+  background-image: linear-gradient( var(--greyBlue) 20%, var(--lightBlue) 80%);
+  background-color: var(--greyBlue);
+  margin: 0px 4%;
+}
+.sectionHeader.techHead{
+  padding: 50px;
+  margin: 50px 0px 40px 0px;
+  color: black;
+}
+.techPicContainer{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr;
+}
+.techPic{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.html{
+  position: relative;
+  left: 30%;
+  top: 57%
+}
+.react{
+  position: relative;
+  bottom: 170%;
+  right: 20%;
+}
+.wordPress{
+  position: relative;
+  right: 20%;
+  bottom: 70%;
+}
+.css{
+  position: relative;
+  bottom: 60%;
+  left: 20%
+}
+.js{
+  position: relative;
+  bottom: 40%;
+  right: 30%;
+
+}
+.git{
+  position: relative;
+  bottom: 55%;
+  right: -15%;
+}
+.php{
+  position: relative;
+  right: 23%
+}
+
+.woo{
+  position: relative;
+  left: 17%;
 }
 
 /* -------------------------------Skills Grid ---------------------------*/
@@ -485,6 +549,27 @@ display: none;
     min-height: 30px;
     height: 10vh;
  }
+/* ------------------------------- tech icon tablet ---------------------------*/
+.tech{
+  background-image: linear-gradient( var(--greyBlue) 20%, var(--lightBlue) 80%);
+  background-color: var(--lightBlue);
+  margin: 0px 4%;
+}
+.sectionHeader.techHead{
+  
+  margin: 50px 0px 40px 0px;
+}
+.techPicContainer{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr;
+}
+.techPic{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
  /* -------------------------------skillsgrid tablet  ---------------------------*/
  .skillsGridBox{
   row-gap: 3px;
@@ -548,6 +633,28 @@ display: none;
     width: 45vw;
     font-size: 1.6em;
   }
+
+  /* ------------------------------- tech icon photos ---------------------------*/
+.tech{
+  background-image: linear-gradient( var(--greyBlue) 20%, var(--lightBlue) 80%);
+  background-color: var(--lightBlue);
+  margin: 0px;
+}
+.sectionHeader.techHead{
+  
+  margin: 50px 0px 40px 0px;
+}
+.techPicContainer{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr;
+}
+.techPic{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 
   /* -------------------------------Skills grid phone  ---------------------------*/
 
