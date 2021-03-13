@@ -268,142 +268,43 @@ video {
 }
 /* ------------------------------- tech icon photos ---------------------------*/
 .tech{
+  position: relative;
   background-image: linear-gradient( var(--greyBlue) 20%, var(--lightBlue) 80%);
   background-color: var(--greyBlue);
-  margin: 0px 4%;
+  border-radius: 2%;
 }
 .sectionHeader.techHead{
-  padding: 50px;
-  margin: 50px 0px 40px 0px;
+  display: flex;
   color: black;
+  align-items: center;
+  justify-content: center;
+  height: 70px;
 }
 .techPicContainer{
+  position: relative;
+  left: 0;
+  box-sizing: border-box;
+  width: 95vw;
   display: grid;
-  grid-template-columns: 1fr 1fr;
-  grid-template-rows: 1fr 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  row-gap: 30px;
 }
 .techPic{
   display: flex;
   justify-content: center;
   align-items: center;
-}
-.html{
-  position: relative;
-  left: 30%;
-  top: 57%
-}
-.react{
-  position: relative;
-  bottom: 170%;
-  right: 20%;
-}
-.wordPress{
-  position: relative;
-  right: 20%;
-  bottom: 70%;
-}
-.css{
-  position: relative;
-  bottom: 60%;
-  left: 20%
-}
-.js{
-  position: relative;
-  bottom: 40%;
-  right: 30%;
-
+  width: 100%;
 }
 .git{
+  grid-row-start: 3;
   position: relative;
-  bottom: 55%;
-  right: -15%;
+  left: 50%;
 }
-.php{
+.react{
+  grid-row-start: 3;
   position: relative;
-  right: 23%
-}
-
-.woo{
-  position: relative;
-  left: 17%;
-}
-
-/* -------------------------------Skills Grid ---------------------------*/
-.skills{
-  position: relative;
-  width: 100vw;
-  height: 100vh;
-  min-height: 400px;
-  max-height: 450px;
-  margin: 0;
-  background-image: linear-gradient( var(--darkBrown), var(--darkBlue));
-  overflow: visible;
-  text-align: center;
-
-}
-.sectionHeader{
-  font-size: 2em;
-  text-align: center;
-}
-
-.skillsBody{
-  display: inline-block;
-}
-/* grid */
-.skillsGridBox{
-  height: inherit;
-  width: inherit;
-  background-color: var(--red);
-  max-height: 100%;
-  min-height: 300px;
-  z-index: -1;
-  text-align: center;
-  display: grid;
-  grid-template-columns: repeat(6 , .2fr);
-  grid-template-rows:repeat(8 , 30px);
-  row-gap: .2%;
-  column-gap: .5%;
-  margin: 0;
-  align-content: center;
-  overflow: visible;
-  justify-items: center;
-  align-items: center;
-}
-
-.gridLabel{
-  font-size: 1.2em;
-  width: 95px;
-}
-.skillInGrid{
-  grid-column-start: 1;
-  font-size:  1.2em;
-}
-
-.gridColumnEnd{
-  grid-column-end: 7;
-}
-
-/* animation for circle */
-@keyframes circleExpand{
-  from{
-    background-color: var(--white);
-  }
-  to{  
-    background-color: var(--black);
-  }
-}
-.circle{
-  background-color: var(--white);
-  height: 10px;
-  width: 100%;
-  border-radius: 0%;
-  
-}
-
-.circle:hover{
-  animation-name: circleExpand;
-  animation-duration: .5s;
-  background-color: var(--red);
+  left: 50%;
 }
 
 /* -------------------------------Projects/Portfolio ---------------------------*/
