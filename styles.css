@@ -25,7 +25,7 @@ html{
   font-family: sans-serif;
 }
 body{
-background-color: whitesmoke;
+background-color: var(--black);
 }
 
 a{
@@ -272,19 +272,21 @@ video {
   background-image: linear-gradient( var(--greyBlue) 20%, var(--lightBlue) 80%);
   background-color: var(--greyBlue);
   border-radius: 2%;
+  padding-bottom: 50px;
 }
 .sectionHeader.techHead{
   display: flex;
   color: black;
   align-items: center;
   justify-content: center;
-  height: 70px;
+  font-size: max(3vw, 30px);
+  padding: 40px 0px;
 }
 .techPicContainer{
   position: relative;
   left: 0;
   box-sizing: border-box;
-  width: 95vw;
+  width: 90vw;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   grid-template-rows: 1fr 1fr 1fr;
@@ -295,6 +297,15 @@ video {
   justify-content: center;
   align-items: center;
   width: 100%;
+}
+
+.html{
+  position: relative;
+  left: 25%;
+}
+.js{
+  position: relative;
+  right: 25%;
 }
 .git{
   grid-row-start: 3;
@@ -451,25 +462,6 @@ display: none;
     height: 10vh;
  }
 /* ------------------------------- tech icon tablet ---------------------------*/
-.tech{
-  background-image: linear-gradient( var(--greyBlue) 20%, var(--lightBlue) 80%);
-  background-color: var(--lightBlue);
-  margin: 0px 4%;
-}
-.sectionHeader.techHead{
-  
-  margin: 50px 0px 40px 0px;
-}
-.techPicContainer{
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  grid-template-rows: 1fr 1fr 1fr 1fr;
-}
-.techPic{
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
 
  /* -------------------------------skillsgrid tablet  ---------------------------*/
  .skillsGridBox{
@@ -543,7 +535,7 @@ display: none;
 }
 .sectionHeader.techHead{
   
-  margin: 50px 0px 40px 0px;
+  margin: 30px 0px 30px 0px;
 }
 .techPicContainer{
   display: grid;
@@ -554,8 +546,27 @@ display: none;
   display: flex;
   justify-content: center;
   align-items: center;
+  width: 100%;
 }
 
+.html{
+  position: relative;
+  left: 0%;
+}
+.js{
+  position: relative;
+  right: 0%;
+}
+.git{
+  grid-row-start: 3;
+  position: relative;
+  left: 0%;
+}
+.react{
+  grid-row-start: 3;
+  position: relative;
+  left: 0%;
+}
 
   /* -------------------------------Skills grid phone  ---------------------------*/
 
