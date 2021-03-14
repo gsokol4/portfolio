@@ -340,17 +340,27 @@ video {
 
 }
 .imagesForPortfolio{
+  display: none;
   max-height: 40vh;
   width: 30vw;
-  min-width: 150px;
-  min-height: 150px;
+  max-width: 150px;
+  max-height: 150px;
   object-fit: contain;
 }
 .projectDescription{
+  display: none;
   min-width: 150px;
   min-height: 150px;
   max-height: 350px;
-  background-color: transparent;
+}
+
+.projectContainer:hover .imagesForPortfolio{
+  display: inline;
+  position: relative;
+  bottom: 45%;
+}
+.projectContainer:hover .projectTitle{
+  opacity: .4;
 }
 
 
