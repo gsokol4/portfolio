@@ -337,9 +337,13 @@ video {
   text-align: center;
 
 }
+.projectsTitle{
+  font-size: 3em;
+}
 .projectContainer{
   width: 30%;
   align-self: center;
+  height: 150px;
 }
 .projectTitle{
   font-size: 5vh;
