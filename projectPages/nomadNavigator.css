@@ -1,0 +1,34 @@
+/* -------------------------------Welcome---------------------------------*/
+/* -the Css in this project is layed out in a top down approach each. In other word
+    the goal is for elements to be organized as they appear in the html*/
+    @import url('https://fonts.googleapis.com/css2?family=Mr+Dafoe&display=swap');
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+:root{
+  --darkBrown: #492c26;
+  --darkBlue: #10173f;
+  --white: 	#fff;
+  --lightBlue: #79aff2;
+  --black: #170f11;
+  --greyBlue: #8798c8;
+}
+/*---------------------------------Header----------------------------------*/
+a:hover{
+  cursor: pointer;
+}
+.home{
+  color: var(--lightBlue);
+  text-decoration: none;
+  width: 25px;
+  height: 25px;
+  position: absolute;
+  top: 2%;
+  left: 5%;
+}
+.logo{
+  font-family: 'Mr Dafoe', cursive;
+  font-size: max(4vh,1.8em);
+}
