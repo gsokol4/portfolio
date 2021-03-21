@@ -97,6 +97,11 @@ nav{
   font-family: 'Mr Dafoe', cursive;
   font-size: max(4vh,1.8em);
 }
+.brand{
+  font-family: 'Mr Dafoe', cursive;
+  font-size: max(1vh,.5em);
+  width: 60px;
+}
 .home{
   width: 25px;
   height: 25px;

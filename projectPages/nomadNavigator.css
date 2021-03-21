@@ -17,7 +17,10 @@
 }
 
 /*---------------------------------Header----------------------------------*/
-
+header{
+  width: 98.8vw;
+  height: max(15vh,80px);
+}
 a:hover{
   cursor: pointer;
 }
@@ -35,6 +38,7 @@ a:hover{
   font-size: max(4vh,1.8em);
 }
 
+
 /*---------------------------------body----------------------------------*/
 body{
   background-image: linear-gradient(#261410 20%, var(--darkBlue) 75%);
@@ -43,4 +47,12 @@ body{
   min-height: 100vh;
   color: var(--white);
 }
+.projectContainer{
+  display: grid;
+}
+.photoGallery{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 
+}
