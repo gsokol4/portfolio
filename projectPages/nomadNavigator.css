@@ -49,6 +49,25 @@ body{
 }
 .projectContainer{
   display: grid;
+  background-color: green;
+  grid-template-columns: 100px 1fr 1fr 100px;
+  grid-template-rows: max(5vh,100px);
+  align-items: center;
+  justify-content: center;
+}
+.projectTitle{
+  grid-row-start: 1;
+  grid-column-start: 2;
+  grid-column-end: 4;
+  
+}
+.techBlock{
+  grid-row-start: 2;
+  grid-column-start: 2;
+}
+.description{
+  grid-row-start: 2;
+  grid-column-start: 3;
 }
 .photoGallery{
   display: flex;
