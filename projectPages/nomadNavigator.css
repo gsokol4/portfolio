@@ -18,14 +18,15 @@
 
 /*---------------------------------Header----------------------------------*/
 html{
-  background-image: linear-gradient(#261410 20%, var(--darkBlue) 75%);
+  background-image: linear-gradient(var(--greyBlue) 20%, pink 75%);
   background-size: cover;
   background-repeat: no-repeat;
   min-height: 100vh;
-  color: var(--white);
+  color: white;
+  font-family: sans-serif;;
 }
 header{
-  width: 98.8vw;
+  width: 98vw;
   height: max(15vh,80px);
 }
 a:hover{
@@ -47,32 +48,66 @@ a:hover{
 
 
 /*---------------------------------body----------------------------------*/
-body{
-
-}
 .decoration{
   position: absolute;
   z-index: -20;
   height: 900px;
-  width: 100vw;
-  background-image: linear-gradient( var(--greyBlue), var(--lightBlue) );
+  width: 98vw;
+  background-image: linear-gradient( var(--greyBlue), pink 95%);
   border-radius: 60px;
   transform: skewY(-25deg);
   top: -200px;
+  opacity: .45;
 }
-.lowerDecoration{
+.dec2{
   position: absolute;
   z-index: -20;
   height: min(600px, 60vh);
-  width: 100vw;
-  background-image: linear-gradient( var(--greyBlue), var(--lightBlue) );
+  width: 98vw;
+  background-image: linear-gradient( var(--greyBlue), pink );
   border-radius: 50%;
-  transform: skewY(25deg);
+  transform: skewY(10deg);
   top: 700px;
+  opacity: .1;
+}
+.dec3{
+  position: absolute;
+  z-index: -20;
+  height: min(600px, 60vh);
+  width: 10vw;
+  background-image: linear-gradient( var(--greyBlue), pink );
+  border-radius: 6%;
+  transform: skewY(70deg);
+  top: 700px;
+  opacity: .1;
+}
+.dec4{
+  position: absolute;
+  z-index: -20;
+  height: min(600px, 60vh);
+  width: 10vw;
+  background-image: linear-gradient( var(--greyBlue), pink );
+  border-radius: 6%;
+  transform: skewY(70deg);
+  top: 110%;
+  opacity: .1;
+  box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+}
+.dec5{
+  position: absolute;
+  z-index: -20;
+  height: 80px;
+  width: 98.7vw;
+  background-image: linear-gradient( var(--greyBlue), pink );
+  border-radius: 6%;
+  top: 170%;
+  opacity: .4;
+  transform: skewX(10deg);
+  transform: skewY(-10deg);
 }
 .projectContainer{
   display: grid;
-  grid-template-columns: 100px .8fr 3fr 100px;
+  grid-template-columns: 1fr .8fr 3fr 1fr;
   grid-template-rows: auto auto;
   align-items: top;
   justify-content: top;
@@ -105,19 +140,23 @@ body{
 /* ----------------------------photo gallary ------------------------------- */
 .siteLink{
   outline: none;
-  background-color: #10173f;
+  background-color: var(--darkBlue);
   text-decoration: none;
   color: white;
   margin: 20px;
   height: 50px;
   width: 180px;
-  box-shadow: 1px 2px 0px var(--black);
+  box-shadow: rgba(0, 0, 0, 0.07) 3px 1px 2px, rgba(0, 0, 0, 0.07) 0px 2px 4px, rgba(0, 0, 0, 0.07) 0px 4px 8px, rgba(0, 0, 0, 0.07) 0px 8px 16px, rgba(0, 0, 0, 0.07) 0px 16px 32px, rgba(0, 0, 0, 0.07) 0px 32px 64px;
+  text-shadow:1px 1px 0 #000;
   display: flex;
   align-items: center;
   justify-content: center;
-  outline:#170f11 solid 2px;
 }
 
+.siteLink:hover{
+  box-shadow: var(--lightBlue) 0px 1px 2px, var(--lightBlue) 0px 2px 4px,var(--lightBlue) 0px 4px 8px,var(--lightBlue) 4px 0px 8px, var(--lightBlue), var(--lightBlue) 0px -4px 8px,var(--lightBlue) -4px 0px 8px, var(--white) 0px 8px 16px, var(--white) 8px 0px 16px, var(--white) 0px -8px 16px, var(--white) -8px 0px 16px;
+  text-shadow:1px 1px 0 #666;
+}
 
 .photoGallery{
   display: flex;
