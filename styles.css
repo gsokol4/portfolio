@@ -21,7 +21,6 @@ html{
   color: white;
   display: flex;
   justify-content: center;
-  max-width: 100vw;
   font-family: sans-serif;
 }
 body{
