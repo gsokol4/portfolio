@@ -164,3 +164,33 @@ a:hover{
   flex-direction: column;
   align-items: center;
 }
+
+/* ----------------------------phone styles (below 400px) ------------------------------- */
+
+@media only screen and (max-width: 400px), (max-height: 300px) {
+  .projectContainer{
+    display: flex;
+    flex-direction:column;
+    align-items: top;
+    justify-content: top;
+    font-size: 1.1em;
+  }
+
+  .title{
+    font-size: 1.2em;
+    margin: 15px;
+    text-align: left;
+  }
+  .projectTitle{
+
+    text-align: center;
+    margin: 2%;
+  }
+  .techBlock{
+    margin: 10px 20px 10px 20px;
+  
+  }
+  .description{
+    margin: 10px 20px 20px 20px;
+  }
+}

@@ -286,11 +286,12 @@ video {
   background-color: var(--greyBlue);
   border-radius: 2%;
   padding-bottom: 50px;
+  border: var(--greyBlue) solid 2px;
 
 }
 .sectionHeader.techHead{
   display: flex;
-  color: black;
+  color: white;
   align-items: center;
   justify-content: center;
   font-size: max(3vw, 30px);
