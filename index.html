@@ -87,7 +87,6 @@
       </div>
     </div>
 
-    <div class="anchor" id="skillsId"></div>
     <div class="about">
       <h3 class="sectionHeader aboutMeHead">
         About Me
@@ -129,7 +128,7 @@
       </a>
     </div>
 
-
+    <div class="anchor" id="skillsId"></div>
     <section class="tech">
       <h3 class="sectionHeader techHead">Tools and Skills</h3>
       <section class="techPicContainer">
@@ -196,38 +195,23 @@
         </div> 
         <div class="letsTalk">Interested in reaching out? Let's talk.</div>
       </p>
-      <!--contact form from google forms--> 
-    <iframe class='googleForm' src="https://docs.google.com/forms/d/e/1FAIpQLSeiCa8cbpcv4PKD3FTzm3cgdoksJ59254eF8XLXJgUrR5brIg/viewform?embedded=true" 
-    style="
-    position: relative;
-    top: 0px;
-    bottom: 0px;
-    right: 0px;
-    width: 100%;
-    border: none;
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
-    z-index: 1;
-    height: 100%;
-  ">
-    >Loading…</iframe>
     </div>
-    <script src="index.js"></script>
-
-    <form class="formBox" id="fs-frm" name="simple-contact-form" accept-charset="utf-8" action="https://formspree.io/f/xyylgrql" method="post">
-      <fieldset id="fs-frm-inputs">
-        <label class="formBox" for="full-name">Full Name</label>
-        <input class="formBox" type="text" name="name" id="full-name" placeholder="First and Last" required="">
-        <label for="email-address">Email Address</label>
-        <input type="email" name="_replyto" id="email-address" placeholder="email@example.com" required="">
-        <label for="message">Message</label>
-        <textarea rows="5" name="message" id="message" placeholder="what is on your mind?" required=""></textarea>
+    
+    
+    <form class="formContainer" id="fs-frm" name="simple-contact-form" accept-charset="utf-8" action="https://formspree.io/f/xyylgrql" method="post">
+      <fieldset class='contact container'id="fs-frm-inputs">
+        <h3>Let's Talk</h3>
+        <label class="formBox label" for="full-name">Name</label>
+        <input class="formBox input" type="text" name="name" id="full-name" placeholder="" required="">
+        <label class="formBox label" for="email-address">Email Address</label>
+        <input class="formBox input" type="email" name="_replyto" id="email-address" placeholder="" required="">
+        <label class="formBox " for="message">Message</label>
+        <textarea class="formBox input message" rows="3" name="message" id="message" placeholder="what is on your mind?" required=""></textarea>
         <input type="hidden" name="_subject" id="email-subject" value="Contact Form Submission">
       </fieldset>
-      <input type="submit" value="Submit">
+      <input class="formButton" type="submit" value="Submit">
     </form>
-
+    <script src="index.js"></script>
   </body>
 
 </html>
