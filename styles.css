@@ -270,12 +270,21 @@ video {
 }
 
 /* ------------------------------- about page ---------------------------*/
+.aboutMeHead{
+  display: flex;
+  color: white;
+  align-items: center;
+  justify-content: center;
+  font-size: max(3vw, 30px);
+  padding: 40px 0px;
+}
+
 .about{
   width: 80vw;
   margin: auto;
 }
 .sellYourSelf{
-  font-size: 4em;
+  font-size: 3em;
 }
 .sellYourSelf mark{
   color: var(--lightBlue);
@@ -390,6 +399,9 @@ video {
 }
 .projectContainer:hover .projectTitle{
   opacity: .4;
+}
+.aside{
+  font-size: .4em;
 }
 
 
