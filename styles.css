@@ -21,11 +21,11 @@ html{
   color: white;
   display: flex;
   justify-content: center;
-  max-width: 100vw;
   font-family: sans-serif;
 }
 body{
-background-color: var(--black);
+  background-image: linear-gradient(#261410 25%, var(--darkBlue) 75%, var(--greyBlue));
+  background-repeat: repeat;
 }
 
 a{
@@ -58,9 +58,9 @@ nav{
   background-color: transparent;
   flex-wrap: wrap;
   justify-content: center;
-  max-width: 99.5vw;
+  max-width: 99vw;
   margin: 0px;
-  width: 100vw;
+  width: 98vw;
   height: 10vh;
   min-height: 65px;
   z-index: 10;
@@ -182,12 +182,13 @@ display: inline;
 /* -------------------------------landing page ---------------------------*/
 video {
   object-fit: cover;
-  width: 100vw;
+  width: calc(100vw - (100vw - 100%));
   height: 100vh;
   position: absolute;
   top: 0;
   left: 0;
  z-index: -20;
+ border-bottom: 4px solid black ;
 }
 #homeId{
   position: relative;
@@ -204,7 +205,7 @@ video {
 
 .landingPageHeader{
   position: relative;
-  top: -10%;
+  top: 0%;
 }
 
 .typewriter div{
@@ -249,37 +250,65 @@ video {
 .container{
  margin-top: 0vh;
 }
-/* button element animation */
-.container .seeWorkButton {
-  display: relative;
-  width: 15vw;
-  max-width: 90vw;
-  background-color: none;
-  height: 10vh;
-  margin-top: 0%;
-  outline: var(--deepRed) solid 2px;
-  border-radius: 3%;
-  min-height: 100%;
-  min-width: 60px;
+.socialMedia{
+  display: flex;
+  margin: 20px;
 }
-.seeWorkButton:hover {
-  color: var(--white);
-  background-color: var(--TangareenOrange);
-  opacity: .8;
-  outline: var(--deepRed), solid, 2px;
-  min-height: 100%;
+.socialMedia a{
+  margin: 10px;
+}
+.linkedIn {
+  display: flex;
+  flex-direction: column;
+}
+.socialMediaLink img{
+  align-self: center;
+}
+.gitHub{
+  display: flex;
+  flex-direction: column;
+}
+
+/* ------------------------------- about page ---------------------------*/
+.aboutMeHead{
+  display: flex;
+  color: white;
+  align-items: center;
+  justify-content: center;
+  font-size: max(3vw, 30px);
+  padding: 40px 0px;
+}
+
+.about{
+  width: 80vw;
+  margin: auto;
+}
+.sellYourSelf{
+  font-size: 3em;
+}
+.sellYourSelf mark{
+  color: var(--lightBlue);
+  background-color: transparent;
+}
+.sellYourSelf small{
+  margin: auto;
+  font-size: .5em;
 }
 /* ------------------------------- tech icon photos ---------------------------*/
 .tech{
   position: relative;
+  /*
   background-image: linear-gradient( var(--greyBlue) 20%, var(--lightBlue) 80%);
   background-color: var(--greyBlue);
-  border-radius: 2%;
+  */
+  border-radius: 1%;
   padding-bottom: 50px;
+  border: var(--greyBlue) solid 1px;
+
 }
 .sectionHeader.techHead{
   display: flex;
-  color: black;
+  color: white;
   align-items: center;
   justify-content: center;
   font-size: max(3vw, 30px);
@@ -337,9 +366,14 @@ video {
   text-align: center;
 
 }
+.projectsTitle{
+  font-size: 3em;
+  text-decoration: underline var(--lightBlue);
+}
 .projectContainer{
   width: 30%;
   align-self: center;
+  height: 150px;
 }
 .projectTitle{
   font-size: 5vh;
@@ -366,40 +400,80 @@ video {
 .projectContainer:hover .projectTitle{
   opacity: .4;
 }
+.aside{
+  font-size: .4em;
+}
 
 
 /* -------------------------------Contact ---------------------------*/
-.blockContainer{
-  width: auto;
-  height: 100vh;
-}
 
-.contact{
+/* ------------------------------- new form  ---------------------------*/
+.formContainer{
+  width: max(70%,320px);
+  margin-top: 70px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 70px;
+  background-color: transparent;
   display: flex;
   flex-direction: column;
-  height: 100vh;
-  max-width: 100vw;
-  justify-content: center;
+  align-self: center;
+
+}
+.formBox{
+width: 98vw;
+background-color: transparent;
+display: flex;
+flex-direction: column;
+align-items: center;
+justify-items: center;
+background-color: transparent;
+margin: 10px;
+
+}
+.contact.container{
+  display: flex;
+  flex-direction: column;
   align-items: center;
-  font-size: 2.5vw;
+  background-color:transparent;
+  border: none;
+  justify-content: center;
 }
-.contactInfo{
-  display: none;
+.formBox{
+  text-align: center;
+  width: 320px;
+  color: white;
+  
 }
-.socialMedia{
-  display: none;
-}
-
-.letsTalk{
-display: none;
-}
-.googleForm{
-  width: 70vw;
-  height: 2000px;
-  overflow: scroll;
+.formBox.input{
+  border: none;
+  border-bottom: 2px solid var(--lightBlue);
+  outline: none;
 }
 
+.formBox.input.message{
+  background-color: var(--greyBlue);
+}
+.formButton{
+  width: 320px;
+  height: 20px;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: transparent;
+  border: none;
 
+  outline: pink wavy 1px;
+  background-color: var(--darkBlue);
+  text-decoration: none;
+  color: white;
+  box-shadow: rgba(0, 0, 0, 0.07) 3px 1px 2px, rgba(0, 0, 0, 0.07) 0px 2px 4px, rgba(0, 0, 0, 0.07) 0px 4px 8px, rgba(0, 0, 0, 0.07) 0px 8px 16px, rgba(0, 0, 0, 0.07) 0px 16px 32px, rgba(0, 0, 0, 0.07) 0px 32px 64px;
+  text-shadow:1px 1px 0 #000;
+}
+
+.formButton:hover{
+  box-shadow: var(--lightBlue) 0px 1px 2px, var(--lightBlue) 0px 2px 4px,var(--lightBlue) 0px 4px 8px,var(--lightBlue) 4px 0px 8px, var(--lightBlue), var(--lightBlue) 0px -4px 8px,var(--lightBlue) -4px 0px 8px, var(--white) 0px 8px 16px, var(--white) 8px 0px 16px, var(--white) 0px -8px 16px, var(--white) -8px 0px 16px;
+  text-shadow:1px 1px 0 #666;
+}
 
 /* ------------------------------- begin tablet styles  ---------------------------*/
 @media only screen and (max-width: 850px) {
@@ -414,7 +488,7 @@ display: none;
     justify-content: center;
     max-width: 98vw;
     margin: 0;
-    width: 100vw;
+    width: 98vw;
     height: 10vh;
     z-index: 10;
     min-height: 60px;
@@ -602,31 +676,6 @@ display: none;
     font-size: .4em;
   }
   /* -------------------------------contact phone  ---------------------------*/
-  .contactInfo{
-    display: inline;
-    font-size: 3em;
-  }
-  .socialMedia{
-    display: flex;
-    justify-content: space-evenly;
-    width: 100vw;
-  }
-  .socialMediaLink{
-    align-self: center;
-    font-size: 2em;
-
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-  }
-  .letsTalk{
-    font-size: 2.5em;
-    margin: 30px;
-  }
-  .googleForm{
-    display: none;
-  }
 }
 @media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
   /* ----------------------IE10+ CSS styles go here--------------------------- */
