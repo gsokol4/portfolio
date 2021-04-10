@@ -83,15 +83,7 @@ nav{
   background-color: var(--white);
   margin-left: 10%;
 }
-.menuPiece.top{
-  top: 40%;
-}
-.menuPiece.mid{
-  top: 50%;
-}
-.menuPiece.bot{
-  top: 60%;
-}
+
 .logo{
   font-family: 'Mr Dafoe', cursive;
   font-size: max(4vh,1.8em);
@@ -114,6 +106,7 @@ nav{
   margin-top: 0;
   background-color: transparent;
   color: var(--white);
+  font-size: 1.2em;
 }
 .navElement .navButtonDecorations{
 position: absolute;
@@ -275,7 +268,7 @@ video {
   color: white;
   align-items: center;
   justify-content: center;
-  font-size: max(3vw, 30px);
+  font-size: max(3em, 30px);
   padding: 40px 0px;
 }
 
@@ -284,7 +277,7 @@ video {
   margin: auto;
 }
 .sellYourSelf{
-  font-size: 3em;
+  font-size: 2.5em;
 }
 .sellYourSelf mark{
   color: var(--lightBlue);
@@ -373,7 +366,7 @@ video {
 .projectContainer{
   width: 30%;
   align-self: center;
-  height: 150px;
+  height: auto;
 }
 .projectTitle{
   font-size: 5vh;
@@ -395,7 +388,7 @@ video {
 .projectContainer:hover .imagesForPortfolio{
   display: inline;
   position: relative;
-  bottom: 70px;
+  
 }
 .projectContainer:hover .projectTitle{
   opacity: .4;
@@ -474,6 +467,9 @@ margin: 10px;
   box-shadow: var(--lightBlue) 0px 1px 2px, var(--lightBlue) 0px 2px 4px,var(--lightBlue) 0px 4px 8px,var(--lightBlue) 4px 0px 8px, var(--lightBlue), var(--lightBlue) 0px -4px 8px,var(--lightBlue) -4px 0px 8px, var(--white) 0px 8px 16px, var(--white) 8px 0px 16px, var(--white) 0px -8px 16px, var(--white) -8px 0px 16px;
   text-shadow:1px 1px 0 #666;
 }
+
+
+
 
 /* ------------------------------- begin tablet styles  ---------------------------*/
 @media only screen and (max-width: 850px) {
