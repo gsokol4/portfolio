@@ -136,6 +136,8 @@ display: inline;
 }
 .pointer{
   height: 40px;
+  position: relative;
+  top: 30px;
 }
 #section05 a {
   padding-top: 70px;

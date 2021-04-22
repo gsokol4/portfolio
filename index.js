@@ -1,5 +1,10 @@
 'use strict'
-
+function assignCopyrightDate () {
+  var copyright = document.getElementById('copyright')
+  const year = new Date().getFullYear()
+  copyright.textContent = `\u00A9 Gabriel Sokol ${year}`
+}
+assignCopyrightDate()
 var TxtType = function (el, toRotate, period) {
   this.toRotate = toRotate
   this.el = el
