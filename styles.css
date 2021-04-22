@@ -379,8 +379,6 @@ video {
 
 .imagesForPortfolio{
   display: inline;
-  max-width: 150px;
-  max-height: 150px;
   object-fit: contain;
 
   transition: all .45s ease-in;
@@ -585,7 +583,14 @@ margin: 10px;
     min-height: 30px;
     height: 10vh;
  }
-/* ------------------------------- tech icon tablet ---------------------------*/
+/* ------------------------------- project icon tablet ---------------------------*/
+
+.projectContainer:hover .imagesForPortfolio{
+  display: inline;
+  position: relative;
+  height: 75px;
+  opacity: 1;
+}
 
  /* -------------------------------skillsgrid tablet  ---------------------------*/
  .skillsGridBox{
@@ -605,7 +610,7 @@ margin: 10px;
 
 }
 
-@media only screen and (max-width: 400px), (max-height: 300px) {
+@media only screen and (max-width: 400px), (max-height: 350px) {
   
    /* -------------------------------nav section phone  ---------------------------*/
 
@@ -656,6 +661,9 @@ margin: 10px;
   background-image: linear-gradient( var(--greyBlue) 20%, var(--lightBlue) 80%);
   background-color: var(--lightBlue);
   margin: 0px;
+  margin-left: auto;
+  margin-right: auto;
+  min-width: 300px;
 }
 .sectionHeader.techHead{
   
