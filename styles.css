@@ -5,10 +5,10 @@
 *{
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
+  box-sizing: content-box;
 }
 :root{
---darkBrown: #492c26;
+--darkBrown: #261410;
 --darkBlue: #10173f;
 --white: 	#fff;
 --lightBlue: #79aff2;
@@ -19,12 +19,10 @@
 /* -------------------------------general styles---------------------------*/
 html{
   color: white;
-  display: flex;
-  justify-content: center;
   font-family: sans-serif;
 }
 body{
-  background-image: linear-gradient(#261410 25%, var(--darkBlue) 75%, var(--greyBlue));
+  background-image: linear-gradient( black 25%, var(--darkBlue) 75%, var(--greyBlue));
   background-repeat: repeat;
 }
 
@@ -32,6 +30,7 @@ a{
   text-decoration: none;
   color: inherit;
 }
+
 button{
   background: none;
   color: inherit;
@@ -51,19 +50,20 @@ button{
 /* -------------------------------Navagation Bar ---------------------------*/
 
 nav{
-  position: fixed;
+  position: absolute;
   display: flex;
   top: 0%;
   left: 0%;
   background-color: transparent;
   flex-wrap: wrap;
   justify-content: center;
-  max-width: 99vw;
   margin: 0px;
-  width: 98vw;
   height: 10vh;
   min-height: 65px;
   z-index: 10;
+  width: calc(100vw - (100vw - 100%));
+
+  
 }
 .mobileMenu{
   position: fixed;
@@ -83,15 +83,7 @@ nav{
   background-color: var(--white);
   margin-left: 10%;
 }
-.menuPiece.top{
-  top: 40%;
-}
-.menuPiece.mid{
-  top: 50%;
-}
-.menuPiece.bot{
-  top: 60%;
-}
+
 .logo{
   font-family: 'Mr Dafoe', cursive;
   font-size: max(4vh,1.8em);
@@ -114,6 +106,7 @@ nav{
   margin-top: 0;
   background-color: transparent;
   color: var(--white);
+  font-size: 1.2em;
 }
 .navElement .navButtonDecorations{
 position: absolute;
@@ -144,6 +137,8 @@ display: inline;
 }
 .pointer{
   height: 40px;
+  position: relative;
+  top: 30px;
 }
 #section05 a {
   padding-top: 70px;
@@ -275,7 +270,7 @@ video {
   color: white;
   align-items: center;
   justify-content: center;
-  font-size: max(3vw, 30px);
+  font-size: max(3em, 30px);
   padding: 40px 0px;
 }
 
@@ -284,7 +279,7 @@ video {
   margin: auto;
 }
 .sellYourSelf{
-  font-size: 3em;
+  font-size: 2.5em;
 }
 .sellYourSelf mark{
   color: var(--lightBlue);
@@ -304,6 +299,9 @@ video {
   border-radius: 1%;
   padding-bottom: 50px;
   border: var(--greyBlue) solid 1px;
+  width: 85%;
+  margin-right: auto;
+  margin-left: auto;
 
 }
 .sectionHeader.techHead{
@@ -368,22 +366,27 @@ video {
 }
 .projectsTitle{
   font-size: 3em;
-  text-decoration: underline var(--lightBlue);
+  text-decoration: none;
 }
 .projectContainer{
   width: 30%;
   align-self: center;
-  height: 150px;
+  height: auto;
 }
 .projectTitle{
   font-size: 5vh;
 
 }
+
 .imagesForPortfolio{
-  display: none;
-  max-width: 150px;
-  max-height: 150px;
+  display: inline;
   object-fit: contain;
+
+  transition: all .45s ease-in;
+  transition-timing-function: ease;
+  transition-timing-function: cubic-bezier(0.25, 0.1, 0.25, 1);
+  height: 0px;
+  opacity: 0;
 }
 .projectDescription{
   display: none;
@@ -392,10 +395,13 @@ video {
   max-height: 350px;
 }
 
+
 .projectContainer:hover .imagesForPortfolio{
   display: inline;
   position: relative;
-  bottom: 70px;
+
+  height: 150px;
+  opacity: 1;
 }
 .projectContainer:hover .projectTitle{
   opacity: .4;
@@ -475,6 +481,39 @@ margin: 10px;
   text-shadow:1px 1px 0 #666;
 }
 
+.foot{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  justify-items: center;
+  align-items: center;
+  grid-template-areas: "a b c";
+
+  position: relative;
+  background-color: var(--darkBlue);
+  min-height: 50px;
+  margin-top: 5vh;
+  width: 98vw;
+  padding: 0px;
+  font-size: .8em;
+
+  width: calc(100vw - (100vw - 100%));
+}
+
+.contain.contact{
+  display: flex;
+  flex-direction: column;
+  align-self: end;
+  grid-area: c;
+  justify-self: end;
+  margin-right: 10px;
+}
+.contactItem{
+  margin: 5px;
+}
+
+
+
+
 /* ------------------------------- begin tablet styles  ---------------------------*/
 @media only screen and (max-width: 850px) {
   /* -------------------------------nav tablet  ---------------------------*/
@@ -549,7 +588,14 @@ margin: 10px;
     min-height: 30px;
     height: 10vh;
  }
-/* ------------------------------- tech icon tablet ---------------------------*/
+/* ------------------------------- project icon tablet ---------------------------*/
+
+.projectContainer:hover .imagesForPortfolio{
+  display: inline;
+  position: relative;
+  height: 75px;
+  opacity: 1;
+}
 
  /* -------------------------------skillsgrid tablet  ---------------------------*/
  .skillsGridBox{
@@ -569,7 +615,7 @@ margin: 10px;
 
 }
 
-@media only screen and (max-width: 400px), (max-height: 300px) {
+@media only screen and (max-width: 400px), (max-height: 350px) {
   
    /* -------------------------------nav section phone  ---------------------------*/
 
@@ -620,6 +666,9 @@ margin: 10px;
   background-image: linear-gradient( var(--greyBlue) 20%, var(--lightBlue) 80%);
   background-color: var(--lightBlue);
   margin: 0px;
+  margin-left: auto;
+  margin-right: auto;
+  min-width: 300px;
 }
 .sectionHeader.techHead{
   

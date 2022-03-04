@@ -1,27 +1,10 @@
 'use strict'
-
-class HandleMenuClass {
-  constructor () {
-    this.state = { displayNav: false }
-    this.links = document.getElementsByClassName('container link nav')
-    this.nav = document.getElementsByTagName('nav')
-  }
-
-  handleMenuClick () {
-    this.state.displayNav = !this.state.displayNav
-    if (this.state.displayNav === true) {
-      for (let i = 0; i < this.links.length; i++) {
-        this.links[i].style.display = 'none'
-        this.nav[0].style.backgroundColor = 'transparent'
-      }
-    } else {
-      for (let i = 0; i < this.links.length; i++) {
-        this.links[i].style.display = 'block'
-      }
-    }
-  }
+function assignCopyrightDate () {
+  var copyright = document.getElementById('copyright')
+  const year = new Date().getFullYear()
+  copyright.textContent = `\u00A9 Gabriel Sokol ${year}`
 }
-
+assignCopyrightDate()
 var TxtType = function (el, toRotate, period) {
   this.toRotate = toRotate
   this.el = el
@@ -78,5 +61,3 @@ window.onload = function () {
   css.innerHTML = '.typewrite > .wrap { border-right: 0.08em solid #fff}'
   document.body.appendChild(css)
 }
-
-var handleMenu = new HandleMenuClass()

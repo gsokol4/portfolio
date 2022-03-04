@@ -18,7 +18,7 @@
 
 /*---------------------------------Header----------------------------------*/
 html{
-  background-image: linear-gradient(var(--greyBlue) 20%, pink 75%);
+  background-image: linear-gradient(var(--greyBlue) 20%, var(--darkBlue) 75%);
   background-size: cover;
   background-repeat: no-repeat;
   color: white;
@@ -52,7 +52,7 @@ a:hover{
   z-index: -20;
   height: 900px;
   width: 97vw;
-  background-image: linear-gradient( var(--greyBlue), pink 95%);
+  background-image: linear-gradient( var(--greyBlue), var(--darkBlue) 95%);
   border-radius: 60px;
   transform: skewY(-25deg);
   top: -200px;
@@ -64,7 +64,7 @@ a:hover{
   z-index: -20;
   height: min(600px, 60vh);
   width: 98vw;
-  background-image: linear-gradient( var(--greyBlue), pink );
+  background-image: linear-gradient( var(--greyBlue), var(--darkBlue) );
   border-radius: 50%;
   transform: skewY(10deg);
   top: 700px;
@@ -75,7 +75,7 @@ a:hover{
   z-index: -20;
   height: min(600px, 60vh);
   width: 10vw;
-  background-image: linear-gradient( var(--greyBlue), pink );
+  background-image: linear-gradient( var(--greyBlue), var(--darkBlue) );
   border-radius: 6%;
   transform: skewY(70deg);
   top: 700px;
@@ -86,7 +86,7 @@ a:hover{
   z-index: -20;
   height: min(600px, 60vh);
   width: 10vw;
-  background-image: linear-gradient( var(--greyBlue), pink );
+  background-image: linear-gradient( var(--greyBlue), var(--darkBlue) );
   border-radius: 6%;
   transform: skewY(70deg);
   top: 110%;
@@ -98,7 +98,7 @@ a:hover{
   z-index: -20;
   height: 80px;
   width: 98vw;
-  background-image: linear-gradient( var(--greyBlue), pink );
+  background-image: linear-gradient( var(--greyBlue), var(--darkBlue) );
   border-radius: 6%;
   top: 170%;
   opacity: .4;
@@ -117,7 +117,9 @@ a:hover{
 
 .title{
   font-size: 1.2em;
-  margin: 15px;
+  margin-top: 20px;
+  margin-right: 20px;
+  margin-bottom: 20px;
   text-align: left;
 }
 .projectTitle{
@@ -165,9 +167,9 @@ a:hover{
   align-items: center;
 }
 
-/* ----------------------------phone styles (below 400px) ------------------------------- */
+/* ----------------------------phone styles (below 500px) ------------------------------- */
 
-@media only screen and (max-width: 400px), (max-height: 300px) {
+@media only screen and (max-width: 500px), (max-height: 300px) {
   .projectContainer{
     display: flex;
     flex-direction:column;
@@ -178,7 +180,7 @@ a:hover{
 
   .title{
     font-size: 1.2em;
-    margin: 15px;
+    margin-right: 0px;
     text-align: left;
   }
   .projectTitle{

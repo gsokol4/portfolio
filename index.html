@@ -2,9 +2,16 @@
 <html lang="en">
   <head>
     <title>Gabriel's Portfolio</title>
-    <meta name="description" content="Web sites that Will make you smile" >
+    <meta name="description" content="web page demostrating Gabriel Sokol's skill as a web developer. Let me create your website so that your buisness can reach the stars" >
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="author" content="Gabriel Sokol">
+    <meta charset="UTF-8">
+
+    <meta property='og:title' content='Gabriel Sokol&#39s Portfolio'/>
+    <meta property='og:image' content='https://www.picpedia.org/chalkboard/images/portfolio.jpg'/>
+    <meta property='og:description' content='Gabriel is a Front end dev who works with techs such as React, Git, Html,Javascript, CSS, MongoDB and more.'/>
+    <meta property='og:url' content='https://gabrielsokol.com'/>
+
     <link rel="shortcut icon" type="image/png" href="imagesForPortfolio/htmlFavCon.png">
     <link rel="stylesheet" href="styles.css">
     
@@ -26,13 +33,6 @@
   </video>
   <header>
     <nav>
-
-        <button class="mobileMenu" onclick="handleMenu.handleMenuClick()">
-          <div class="menuPiece top"></div>
-          <div class="menuPiece mid"></div>
-          <div class="menuPiece bot"></div>
-        </button>
-        
         <a class="home" href="#homeId">
           <span class="logo">GFS</span>
           <picture>
@@ -44,18 +44,20 @@
           </picture>
         </a>
 
-        <a href="#skillsId" class="container link nav skillLink" >
-          <button class="navElement">
-            <div class="navButtonDecorations"></div>
-            Skills
-          </button>
-        </a>
+
 
         <a href="#myWorkId"  class="container link nav myWorkLink">
             <button class="navElement">
               <div class="navButtonDecorations"></div>
               Projects
             </button>
+        </a>
+
+        <a href="#skillsId" class="container link nav skillLink" >
+          <button class="navElement">
+            <div class="navButtonDecorations"></div>
+            Skills
+          </button>
         </a>
 
         <a href="#contactInfoId" class="container link nav contactInfoLink">
@@ -101,7 +103,7 @@
       <h3 class="sectionHeader aboutMeHead">
         Welcome to my Portfolio
       </h3>
-      <p class="sellYourSelf"> I like <mark> solving problems</mark> <br><small> that involve building websites and implementing good UX and design. </small> <br>I am your company's <mark> solution. </mark> <br> <small class="direction"> Scroll below to see examples of companies that use my websites.</small>
+      <p class="sellYourSelf">Hi, my name is <mark> Gabriel Sokol</mark>. <br><small>I am a front-end web developer and tech nerd,</small> <br> I like <mark> solving problems</mark> <br><small> that involve building websites and implementing good UX and design. </small> <br>I am your company's <mark> solution. </mark> <br> <small class="direction"> Scroll below to see examples of companies that use my websites.</small>
         </p>
     </div>
     
@@ -111,18 +113,42 @@
       <h3 class="sectionHeader projectsTitle">
         Projects
       </h3>
-      <a rel="noopener noreferrer" href="catCalculator/calculatorIndex.html" class="projectContainer calculator">
-        <h5 class="projectTitle">Kitty Cat Calculator</h5>
-        <img  class="imagesForPortfolio" src="./imagesForPortfolio/portfolioIcons/plusheenComputer150.png" 
-        alt="Kitty Cat Caluculator App">
+      <a rel="noopener noreferrer" href="/projectPages/devLaunchers.html" class="projectContainer nomadnavigator">
+        <h5 class="projectTitle">Dev Launchers<span class="aside"></h5>
+        <picture>
+          <source media="(max-width:850px)" srcset="imagesForPortfolio/portfolioIcons/75pxPortfolioIcons/devLaunchersOrange75px.png">
+          <img class="imagesForPortfolio" src="imagesForPortfolio/portfolioIcons/150pxPortfolioIcons/devLaunchersOrange150px.png" alt="rocket ship">
+        </picture>
       </a>
-      <a rel="noopener noreferrer" href="/projectPages/nomadNavigator.html" class="projectContainer nomadnavigator">
+      <a rel="noopener noreferrer" href="/projectPages/catClicker.html" class="projectContainer nomadnavigator">
+        <h5 class="projectTitle">Cat Clicker<span class="aside"></h5>
+        <picture>
+          <source media="(max-width:850px)" srcset="imagesForPortfolio/portfolioIcons/75pxPortfolioIcons/cat75px.png">
+          <img class="imagesForPortfolio" src="imagesForPortfolio/portfolioIcons/150pxPortfolioIcons/cat150px.png" alt="cat">
+        </picture>
+      </a>
+      <a rel="noopener noreferrer" href="/projectPages/englishSpeechGym.html" class="projectContainer nomadnavigator">
+        <h5 class="projectTitle">English Speech Gym <span class="aside"></h5>
+        <picture>
+          <source media="(max-width:850px)" srcset="imagesForPortfolio/portfolioIcons/75pxPortfolioIcons/usaFlag75px.png">
+          <img class="imagesForPortfolio" src="imagesForPortfolio/portfolioIcons/150pxPortfolioIcons/usaFlag150px.png" alt="Portfolio Logo">
+        </picture>
+      </a>
+      </a>
+      <a id="test" rel="noopener noreferrer" href="/projectPages/nomadNavigator.html" class="projectContainer nomadnavigator">
         <h5 class="projectTitle">Nomad Navigator</h5>
-        <img class="imagesForPortfolio" src="imagesForPortfolio/portfolioIcons/compass needle150px.png">
+        <picture>
+          <source media="(max-width:850px)" srcset="imagesForPortfolio/portfolioIcons/75pxPortfolioIcons/compassNeedle75px.png">
+          <img class="imagesForPortfolio" src="imagesForPortfolio/portfolioIcons/150pxPortfolioIcons/compass needle150px.png" alt="NomadNavigator Logo">
+        </picture>
+         
       </a>
       <a rel="noopener noreferrer" href="/projectPages/portfolioPage.html" class="projectContainer nomadnavigator">
         <h5 class="projectTitle">This Portfolio <span class="aside"> <br>(check out the code)</span></h5>
-        <img class="imagesForPortfolio" src="imagesForPortfolio/portfolioIcons/gear.png">
+        <picture>
+          <source media="(max-width:850px)" srcset="imagesForPortfolio/portfolioIcons/75pxPortfolioIcons/gear75px.png">
+          <img class="imagesForPortfolio" src="imagesForPortfolio/portfolioIcons/150pxPortfolioIcons/gear150px.png" alt="Portfolio Logo">
+        </picture>
       </a>
     </div>
 
@@ -151,8 +177,8 @@
         </picture>
 
         <picture class="techPic wordPress">
-          <source media="(min-width:850px)" srcset="./imagesForPortfolio/tech/100pxHeightWhite/wp100.png">
-          <img src="./imagesForPortfolio/tech/50pxHeightWhite/wp50.png" alt="WordPress Logo">
+          <source media="(min-width:850px)" srcset="./imagesForPortfolio/tech/100pxHeight/nodeJs100px.png">
+          <img src="./imagesForPortfolio/tech/50pxHeight/nodeJs50.png" alt="Node.js Logo">
         </picture>
 
         <picture class="techPic git">
@@ -173,6 +199,7 @@
       </section>
     </section>
     
+    <div class="anchor" id="contactInfoId"></div>
     <form class="formContainer" id="fs-frm" name="simple-contact-form" accept-charset="utf-8" action="https://formspree.io/f/xyylgrql" method="post">
       <fieldset class='contact container'id="fs-frm-inputs">
         <h3>Have some problems? Let's solve them</h3>
@@ -186,7 +213,18 @@
       </fieldset>
       <input class="formButton" type="submit" value="Get Answers">
     </form>
-    <script src="index.js"></script>
+    
+    
+    
   </body>
-
+  <footer class="foot">
+    <div></div>
+    <div id="copyright" >&copy; </div>
+    <div class="contain contact">
+      <div class="contactItem name">Gabriel Sokol</div>
+      <a class="contactItem number" href="tel: +14402145800">Number: +1 440-214-5800</a>
+      <a class="contactItem email" href="mailto: gsokol4@gmail.com"> E-mail: gsokol4@gmail.com</a>
+    </div> 
+  </footer>
+  <script src="index.js"></script>
 </html>
