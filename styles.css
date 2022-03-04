@@ -50,7 +50,7 @@ button{
 /* -------------------------------Navagation Bar ---------------------------*/
 
 nav{
-  position: fixed;
+  position: absolute;
   display: flex;
   top: 0%;
   left: 0%;
@@ -486,6 +486,7 @@ margin: 10px;
   grid-template-columns: 1fr 1fr 1fr;
   justify-items: center;
   align-items: center;
+  grid-template-areas: "a b c";
 
   position: relative;
   background-color: var(--darkBlue);
@@ -502,6 +503,9 @@ margin: 10px;
   display: flex;
   flex-direction: column;
   align-self: end;
+  grid-area: c;
+  justify-self: end;
+  margin-right: 10px;
 }
 .contactItem{
   margin: 5px;
