@@ -2,168 +2,229 @@
 <html lang="en">
   <head>
     <title>Gabriel's Portfolio</title>
-    <meta name="description" content="Web sites that Will make you smile" >
+    <meta name="description" content="web page demostrating Gabriel Sokol's skill as a web developer. Let me create your website so that your buisness can reach the stars" >
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="author" content="Gabriel Sokol">
-    <link rel="shortcut icon" type="image/png" href="./imagesForPortfolio/htmlFavCon.png">
-    <link rel="stylesheet" href="./styles.css">
+    <meta charset="UTF-8">
+
+    <meta property='og:title' content='Gabriel Sokol&#39s Portfolio'/>
+    <meta property='og:image' content='https://www.picpedia.org/chalkboard/images/portfolio.jpg'/>
+    <meta property='og:description' content='Gabriel is a Front end dev who works with techs such as React, Git, Html,Javascript, CSS, MongoDB and more.'/>
+    <meta property='og:url' content='https://gabrielsokol.com'/>
+
+    <link rel="shortcut icon" type="image/png" href="imagesForPortfolio/htmlFavCon.png">
+    <link rel="stylesheet" href="styles.css">
+    
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-DW3NYNGH2V"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-DW3NYNGH2V');
+</script>
+
   </head>
+
+  <video playsinline autoplay muted poster="./imagesForPortfolio/caveStill.png" id="bgvid">
+    <source src="polina.webm" type="video/webm">
+    <source src="./imagesForPortfolio/Cave.mp4" type="video/mp4">
+  </video>
   <header>
     <nav>
-        <button class="mobileMenu" onclick="handleMenu.handleMobleMenuClick()">
-          <div class="menuPiece top"></div>
-          <div class="menuPiece mid"></div>
-          <div class="menuPiece bot"></div>
-        </button>
         <a class="home" href="#homeId">
+          <span class="logo">GFS</span>
           <picture>
+            <!--
             <source media="(min-width:850px)" srcset="./imagesForPortfolio/html50x50.png">
             <source media="(min-width:0px)" srcset="./imagesForPortfolio/html25x25.png">
             <img src="./imagesForPortfolio/html25x25.png" alt="home button">
+            -->
           </picture>
         </a>
 
-        <a href="#skillsId" class="container link nav skills" >
-          <button class="navElement">
-            <div class="navButtonDecorations"></div>
-            Skills
-          </button>
-        </a>
 
-        <a href="#myWorkId"  class="container link nav projects">
+
+        <a href="#myWorkId"  class="container link nav myWorkLink">
             <button class="navElement">
               <div class="navButtonDecorations"></div>
               Projects
             </button>
         </a>
 
-        <a href="#contactInfoId" class="container link nav contactMe">
+        <a href="#skillsId" class="container link nav skillLink" >
+          <button class="navElement">
+            <div class="navButtonDecorations"></div>
+            Skills
+          </button>
+        </a>
+
+        <a href="#contactInfoId" class="container link nav contactInfoLink">
           <button class="navElement">
             <div class="navButtonDecorations"></div>
             Contact Me
           </button>
         </a>
     </nav>
-  </header>
+  </header> 
+
   <body>
-    <div class="anchor" id="homeId"></div>
-    <div class="landingPage"> 
-      <h1 class="landingPageHeader" >Hi, I am Gabriel Sokol.<br> I am a Profesional Web Developer</h1>
-        <a href="#myWorkId" class="container link">
-          <button class="seeWorkButton">
-            See My Work
-          </button>
-        </a>
-      </div>
-    </div>
-
-    <div class="anchor" id="skillsId"></div>
-    <div class="skills">
-      <h3 class="sectionHeader">
-        Profesional skills
-      </h3>
-      <div class="skillsBody">
-        <div class="skillsGridBox">
-
-          <div></div> <!--padding-->
-          <h6 class="gridLabel">competent</h6>
-          <h6 class="gridLabel">good</h6>
-          <h6 class="gridLabel">better</h6>
-          <h6 class="gridLabel">great</h6>
-          <h6 class="gridLabel gridColumnEnd">best</h6>
-          
-          
-          <h6 class="skillInGrid">CSS</h6>
-          <div class="circle"></div>
-          <div class="circle"></div>
-          <div class="circle"></div>
-          <div class="circle"></div>
-          <div class="circle"></div>
-
-          <h6 class="skillInGrid">HTML</h6>
-          <div class="circle"></div>
-          <div class="circle"></div>
-          <div class="circle"></div>
-          <div class="circle"></div>
-          <div class="circle"></div>
-    
-          <h6 class="skillInGrid">JavaScript</h6>
-          <div class="circle"></div>
-          <div class="circle"></div>
-          <div class="circle"></div>
-          <div class="circle"></div>
-          <div class="circle"></div>
-
-          <h6 class="skillInGrid">Restful APIs</h6>
-          <div class="circle"></div>
-          <div class="circle"></div>
-
-          <h6 class="skillInGrid">Animations</h6>
-          <div class="circle"></div>
-          <div class="circle"></div>
-          <div class="circle"></div>
-          
-          <h6 class="skillInGrid">WordPress</h6>
-          <div class="circle"></div>
-          <div class="circle"></div>
-          <div class="circle"></div>
-
-          <h6 class="skillInGrid">React</h6>
-          <div class="circle"></div>
-          <div class="circle"></div>
-          <div class="circle"></div>
-          <div class="circle"></div>
+    <div class="viewport-header">    
+      <div class="anchor" id="homeId"></div>
+      <div class="landingPage"> 
+        <h1 class="landingPageHeader" >
+          Hi, I am 
+          <span class="typewrite" data-period="2000" data-type='[ "Gabriel Sokol", "a front-end engineer", "a passionate programmer", "running out of things to say" ]'>
+            <span class="wrap"></span>
+          </span>
+        </h1>
+        <div class="socialMedia">
+          <a class="linkedIn socialMediaLink" href="https://www.linkedin.com/in/gabriel-sokol/">
+           <img src="./imagesForPortfolio/linkedIn+GitHub/25px/linked-in.png">
+           LinkedIn
+          </a> 
+          <a class="gitHub socialMediaLink" href="https://github.com/gsokol4/">
+            <img src="./imagesForPortfolio/linkedIn+GitHub/25px/gitHub.png">
+            GitHub
+          </a>
+        </div> 
+          <a href="#myWorkId" class="container link">
+            scroll to see how I can help you
+            <section id="section05" class="pointer">
+              <a href="#myWorkId"><span></span></a>
+            </section>
+          </a>
         </div>
       </div>
     </div>
 
+    <div class="about">
+      <h3 class="sectionHeader aboutMeHead">
+        Welcome to my Portfolio
+      </h3>
+      <p class="sellYourSelf">Hi, my name is <mark> Gabriel Sokol</mark>. <br><small>I am a front-end web developer and tech nerd,</small> <br> I like <mark> solving problems</mark> <br><small> that involve building websites and implementing good UX and design. </small> <br>I am your company's <mark> solution. </mark> <br> <small class="direction"> Scroll below to see examples of companies that use my websites.</small>
+        </p>
+    </div>
+    
+
     <div class="anchor" id="myWorkId"></div>
     <div class="myWork">
-      <h3 class="sectionHeader">
-        Portfolio
+      <h3 class="sectionHeader projectsTitle">
+        Projects
       </h3>
-      <a target="_blank" rel="noopener noreferrer" href="cat calculator/calculatorIndex.html" class="projectContainer calculator">
-        <h5 class="projectTitle">Kitty Cat Calculator</h5>
-        <img  class="imagesForPortfolio" src="imagesForPortfolio/KittyCatCalculator.png" 
-        alt="Kitty Cat Caluculator App">
-        <p class="projectDescription">
-          project using JavaScript, Git for Version control, Html, and CSS
-        </p>
+      <a rel="noopener noreferrer" href="/projectPages/devLaunchers.html" class="projectContainer nomadnavigator">
+        <h5 class="projectTitle">Dev Launchers<span class="aside"></h5>
+        <picture>
+          <source media="(max-width:850px)" srcset="imagesForPortfolio/portfolioIcons/75pxPortfolioIcons/devLaunchersOrange75px.png">
+          <img class="imagesForPortfolio" src="imagesForPortfolio/portfolioIcons/150pxPortfolioIcons/devLaunchersOrange150px.png" alt="rocket ship">
+        </picture>
       </a>
-      <a target="_blank" rel="noopener noreferrer" href="https://nomadnavigator.com" class="projectContainer nomadnavigator">
+      <a rel="noopener noreferrer" href="/projectPages/catClicker.html" class="projectContainer nomadnavigator">
+        <h5 class="projectTitle">Cat Clicker<span class="aside"></h5>
+        <picture>
+          <source media="(max-width:850px)" srcset="imagesForPortfolio/portfolioIcons/75pxPortfolioIcons/cat75px.png">
+          <img class="imagesForPortfolio" src="imagesForPortfolio/portfolioIcons/150pxPortfolioIcons/cat150px.png" alt="cat">
+        </picture>
+      </a>
+      <a rel="noopener noreferrer" href="/projectPages/englishSpeechGym.html" class="projectContainer nomadnavigator">
+        <h5 class="projectTitle">English Speech Gym <span class="aside"></h5>
+        <picture>
+          <source media="(max-width:850px)" srcset="imagesForPortfolio/portfolioIcons/75pxPortfolioIcons/usaFlag75px.png">
+          <img class="imagesForPortfolio" src="imagesForPortfolio/portfolioIcons/150pxPortfolioIcons/usaFlag150px.png" alt="Portfolio Logo">
+        </picture>
+      </a>
+      </a>
+      <a id="test" rel="noopener noreferrer" href="/projectPages/nomadNavigator.html" class="projectContainer nomadnavigator">
         <h5 class="projectTitle">Nomad Navigator</h5>
-        <img class="imagesForPortfolio" src="imagesForPortfolio/NomadNavigator.png">
-        <p class="projectDescription">
-          Blog project using Wordpress, PHP, and CSS
-        </p>
+        <picture>
+          <source media="(max-width:850px)" srcset="imagesForPortfolio/portfolioIcons/75pxPortfolioIcons/compassNeedle75px.png">
+          <img class="imagesForPortfolio" src="imagesForPortfolio/portfolioIcons/150pxPortfolioIcons/compass needle150px.png" alt="NomadNavigator Logo">
+        </picture>
+         
+      </a>
+      <a rel="noopener noreferrer" href="/projectPages/portfolioPage.html" class="projectContainer nomadnavigator">
+        <h5 class="projectTitle">This Portfolio <span class="aside"> <br>(check out the code)</span></h5>
+        <picture>
+          <source media="(max-width:850px)" srcset="imagesForPortfolio/portfolioIcons/75pxPortfolioIcons/gear75px.png">
+          <img class="imagesForPortfolio" src="imagesForPortfolio/portfolioIcons/150pxPortfolioIcons/gear150px.png" alt="Portfolio Logo">
+        </picture>
       </a>
     </div>
 
-    <div class="anchor" id="contactInfoId"></div>
-    <div class="contact blockContainer">
-      <h3 class="contactInfo sectionHeader">Contact Info</h3>
-      <p class="contactInfo">
-        Gabriel Sokol <br>
-        gsokol4@gmail.com <br>
-      </p>
-      <!--contact form from google forms--> 
-    <iframe class='googleForm' src="https://docs.google.com/forms/d/e/1FAIpQLSeiCa8cbpcv4PKD3FTzm3cgdoksJ59254eF8XLXJgUrR5brIg/viewform?embedded=true" 
-    style="
-    position: relative;
-    top: 0px;
-    bottom: 0px;
-    right: 0px;
-    width: 100%;
-    border: none;
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
-    z-index: 1;
-    height: 100%;
-  ">
-    >Loading…</iframe>
-    </div>
-    <script src="index.js"></script>
-  </body>
+    <div class="anchor" id="skillsId"></div>
+    <section class="tech">
+      <h3 class="sectionHeader techHead">Tools and Skills</h3>
+      <section class="techPicContainer">
+        <picture class="techPic html">
+          <source media="(min-width:850px)" srcset="./imagesForPortfolio/tech/100pxHeightWhite/html100.png">
+          <img src="./imagesForPortfolio/tech/50pxHeightWhite/html50.png" alt="HTML Logo">
+        </picture>
+  
+        <picture class="techPic css">
+          <source media="(min-width:850px)" srcset="./imagesForPortfolio/tech/100pxHeightWhite/css100.png">
+          <img src="./imagesForPortfolio/tech/50pxHeightWhite/css50.png" alt="CSS Logo">
+        </picture>
 
+        <picture class="techPic react">
+          <source media="(min-width:850px)" srcset="./imagesForPortfolio/tech/100pxHeight/react100.png">
+          <img src="./imagesForPortfolio/tech/50pxHeight/react50.png" alt="React Logo">
+        </picture>
+
+        <picture class="techPic js">
+          <source media="(min-width:850px)" srcset="./imagesForPortfolio/tech/100pxHeight/js100.png">
+          <img src="./imagesForPortfolio/tech/50pxHeight/js50.png" alt="JavaScript Logo">
+        </picture>
+
+        <picture class="techPic wordPress">
+          <source media="(min-width:850px)" srcset="./imagesForPortfolio/tech/100pxHeight/nodeJs100px.png">
+          <img src="./imagesForPortfolio/tech/50pxHeight/nodeJs50.png" alt="Node.js Logo">
+        </picture>
+
+        <picture class="techPic git">
+          <source media="(min-width:850px)" srcset="./imagesForPortfolio/tech/100pxHeight/git100.png">
+          <img src="./imagesForPortfolio/tech/50pxHeight/git50.png" alt="Git Logo">
+        </picture>
+
+        <picture class="techPic woo">
+          <source media="(min-width:850px)" srcset="./imagesForPortfolio/tech/100pxHeightWhite/sass100.png">
+          <img src="./imagesForPortfolio/tech/50pxHeightWhite/sass50.png" alt="Sass Logo">
+        </picture>
+
+        <picture class="techPic php">
+          <source media="(min-width:850px)" srcset="./imagesForPortfolio/tech/100pxHeightWhite/mongoDB100.png">
+          <img src="./imagesForPortfolio/tech/50pxHeightWhite/mongoDB50.png" alt="MongoDB Logo">
+        </picture>
+
+      </section>
+    </section>
+    
+    <div class="anchor" id="contactInfoId"></div>
+    <form class="formContainer" id="fs-frm" name="simple-contact-form" accept-charset="utf-8" action="https://formspree.io/f/xyylgrql" method="post">
+      <fieldset class='contact container'id="fs-frm-inputs">
+        <h3>Have some problems? Let's solve them</h3>
+        <label class="formBox label" for="full-name">Name</label>
+        <input class="formBox input" type="text" name="name" id="full-name" placeholder="" required="">
+        <label class="formBox label" for="email-address">Email Address</label>
+        <input class="formBox input" type="email" name="_replyto" id="email-address" placeholder="" required="">
+        <label class="formBox " for="message">Message</label>
+        <textarea class="formBox input message" rows="3" name="message" id="message" placeholder="" required=""></textarea>
+        <input type="hidden" name="_subject" id="email-subject" value="Contact Form Submission">
+      </fieldset>
+      <input class="formButton" type="submit" value="Get Answers">
+    </form>
+    
+    
+    
+  </body>
+  <footer class="foot">
+    <div></div>
+    <div id="copyright" >&copy; </div>
+    <div class="contain contact">
+      <div class="contactItem name">Gabriel Sokol</div>
+      <a class="contactItem number" href="tel: +14402145800">Number: +1 440-214-5800</a>
+      <a class="contactItem email" href="mailto: gsokol4@gmail.com"> E-mail: gsokol4@gmail.com</a>
+    </div> 
+  </footer>
+  <script src="index.js"></script>
 </html>
